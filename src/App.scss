@@ -1,0 +1,44 @@
+@import "~bootstrap/scss/bootstrap";
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 38px;
+  line-height: 57px;
+  letter-spacing: -0.0015em;
+  font-weight: 700;
+  padding-bottom: 18px;
+}
+
+p {
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 36px;
+}

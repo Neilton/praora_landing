@@ -1,0 +1,91 @@
+@import "../../App.scss";
+
+.navbar {
+  padding: 0px 0px;
+  height: 112px;
+  display: flex;
+  align-items: center;
+  transition: height 0.7ms 0.3s ease;
+}
+.navbar.scrolled {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 1000;
+}
+
+.navbarContent {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.navWrp {
+  
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  margin-right: 107px;
+}
+
+.navWrp .navLink {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1c1c1c !important;
+  padding: 0rem 1.32rem;
+}
+
+.navWrp .navLink {
+  &:hover {
+    color: #1c1c1c9f !important;
+  }
+}
+
+.navbarBrand,
+.footerLogo {
+    display: flex;
+    align-items: center;
+}
+
+.navbarBrand span,
+.footerLogo span {
+    font-family: 'CyclicSans-Light';
+    font-size: 42.1955px;
+    line-height: 47px;
+    margin-left: 20px;
+    font-weight: 300;
+}
+
+.navbarBrand span {
+    color: #000;
+}
+
+.footerLogo span {
+    color: #fff;
+}
+
+.toggleBar {
+    display: none;
+    margin-left: 46px;
+    cursor: pointer;
+}
+
+.submBtn,
+.headerBtn,
+.btn {
+    background: #1C1C1C;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FAFAFA;
+}

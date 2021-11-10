@@ -1,0 +1,52 @@
+.footer {
+  background: #1c1c1c;
+  padding: 69px 0px;
+}
+
+.footerContent {
+  a,
+  p {
+    font-size: 24px;
+    line-height: 36px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s ease;
+    font-weight: 500;
+  }
+  a {
+    &:hover {
+      color: #ddd;
+    }
+  }
+  p {
+    font-weight: 400;
+  }
+  li {
+    &:not(:last-child) {
+      a {
+        padding-bottom: 9px;
+      }
+    }
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    padding-bottom: 11px;
+
+    span {
+        font-family: 'CyclicSans-Light';
+        font-size: 42.1955px;
+        line-height: 47px;
+        margin-left: 20px;
+        font-weight: 300;
+        color: #fff;
+
+    }
+  }
+  .footerMenu {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 90px;
+    margin-top: -5px;
+  }
+}
