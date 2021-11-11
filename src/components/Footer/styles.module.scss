@@ -34,13 +34,12 @@
     padding-bottom: 11px;
 
     span {
-        font-family: 'CyclicSans-Light';
-        font-size: 42.1955px;
-        line-height: 47px;
-        margin-left: 20px;
-        font-weight: 300;
-        color: #fff;
-
+      font-family: "CyclicSans-Light";
+      font-size: 42.1955px;
+      line-height: 47px;
+      margin-left: 20px;
+      font-weight: 300;
+      color: #fff;
     }
   }
   .footerMenu {
@@ -48,5 +47,62 @@
     justify-content: flex-end;
     padding-right: 90px;
     margin-top: -5px;
+  }
+}
+
+@media (max-width: 834px) {
+  .footer {
+    padding: 50px 0px;
+  }
+  .footerContent ul li a,
+  .footerContent p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .loogo {
+    span {
+      font-size: 39px;
+        margin-left: 17px;
+    }
+  }
+  .footerMenu {
+    padding-right: 0;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 568px) {
+  .footer {
+    padding: 40px 0px;
+  }
+  .footerContent {
+    p {
+      font-size: 15px;
+    }
+    ul li {
+      &:not(:last-child) {
+        a {
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+  .footerLeftContent {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .logo {
+    justify-content: center;
+    padding-bottom: 3px;
+    span {
+      font-size: 36px;
+      margin-left: 14px;
+    }
+  }
+  .footerMenu {
+    justify-content: flex-start;
+
   }
 }

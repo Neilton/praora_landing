@@ -12,62 +12,61 @@ function NavBar() {
       collapseOnSelect
       expand
       expanded
-      className={`${styles.navbar} ${styles.navbarScr} nav-src justify-content-center`}
+      className={`${styles.navbar} ${styles.navbarScr} navbar nav-src justify-content-center`}
       data-spy="scroll"
       data-target=".nav-wrp"
     >
-      <Container fluid className={styles.navbarContent}>
-        <a href="#" className={styles.navbarBrand}>
-          <Navbar.Brand href="#home">
-            <img src={logo} alt="" className={"img-fluid"} />
-          </Navbar.Brand>
+      <Container fluid>
+        <div className={styles.navbarContent}>
+          <a href="#" className={styles.navbarBrand}>
+            <Navbar.Brand href="#home">
+              <img src={logo} alt="" className={"img-fluid"} />
+            </Navbar.Brand>
 
-          <span>praora</span>
-        </a>
-        <Nav className={styles.navWrp}>
-          <Nav.Item>
-            <Nav.Link className={styles.navItem}>
-              <a
-                href="#!"
-                data-scroll="whatispraora"
-                className={styles.navLink}
-              >
-                O que é a Praora
-              </a>
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link className={styles.navItem}>
-              <a href="#!" data-scroll="recursos" className={styles.navLink}>
-                Recursos
-              </a>
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link className={styles.navItem}>
-              <a href="#!" data-scroll="howtobeg" className={styles.navLink}>
-                Como começar?
-              </a>
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link className={styles.navItem}>
-              <a href="#!" data-scroll="contact" className={styles.navLink}>
-                Contato
-              </a>
-            </Nav.Link>
-          </Nav.Item>
+            <span>praora</span>
+          </a>
+          <Nav className={styles.navWrp}>
+            <Nav.Item>
+              <Nav.Link className={styles.navItem}>
+                <a
+                  href="#!"
+                  data-scroll="whatispraora"
+                  className={styles.navLink}
+                >
+                  O que é a Praora
+                </a>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link className={styles.navItem}>
+                <a href="#!" data-scroll="recursos" className={styles.navLink}>
+                  Recursos
+                </a>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link className={styles.navItem}>
+                <a href="#!" data-scroll="howtobeg" className={styles.navLink}>
+                  Como começar?
+                </a>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link className={styles.navItem}>
+                <a href="#!" data-scroll="contact" className={styles.navLink}>
+                  Contato
+                </a>
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
+          <Button>
+            <a>Acessar a plataforma</a>
+          </Button>
 
-        </Nav>
-        <Button>
-            <a>
-              Acessar a plataforma
-            </a>
-        </Button>
-
-        <Navbar.Toggle className={styles.toggleBar}>
-          <img src="assets/img/icon/bar.png" className={"img-fluid"} alt="" />
-        </Navbar.Toggle>
+          <Navbar.Toggle className={styles.toggleBar}>
+            <img src="assets/img/icon/bar.png" className={"img-fluid"} alt="" />
+          </Navbar.Toggle>
+        </div>
       </Container>
     </Navbar>
   );

@@ -1,4 +1,16 @@
 .section {
-    padding-bottom: 10px;
-
+  padding-bottom: 10px;
+}
+@media (max-width: 568px) {
+  .section {
+    padding-top: 15px;
+  }
+  .sectionRow {
+    flex-direction: column-reverse;
+  }
+  .sectionImg {
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+  }
 }

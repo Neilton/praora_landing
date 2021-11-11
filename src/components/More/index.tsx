@@ -6,9 +6,9 @@ function More() {
 return(
     <section className={styles.section}>
         <Container>
-            <Row className="row section6-row">
+            <Row className={`row ${styles.sectionRow}`}>
                 <div className="col-md-3">
-                    <div className="section-content section6-content-img">
+                    <div className={`section-content ${styles.sectionImg}`}>
                         <img src={cuate} className="img-fluid" alt="" />
                     </div>
                 </div>

@@ -4,7 +4,7 @@ import { Container, Row } from "react-bootstrap";
 
 function Market (){
     return(
-        <section className={`${styles.section} section4-dark dark-section`} id="howtobeg">
+        <section className={`${styles.section} ${styles.sectionDark} dark-section`} id="howtobeg">
         <Container>
             <Row className={`row align-items-center ${styles.sectionRow}`}>
                 <div className="col-md-5 p-0">

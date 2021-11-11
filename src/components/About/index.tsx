@@ -8,7 +8,7 @@ function About() {
       <Container>
         <div className="row align-items-center">
           <div className="col-md-5 pt-0 pt-md-4 pt-lg-4 pb-0 pb-md-2 pb-lg-2">
-            <div className="section-content section2-content-img">
+            <div className={`section-content ${styles.sectionImg}`}>
               <img src={bro} className="img-fluid" alt="" />
             </div>
           </div>

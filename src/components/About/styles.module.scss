@@ -4,5 +4,26 @@
 }
 .darkSecContent{
     background: #1C1C1C;
+}
+@media(max-width: 834px) {
+    .darkSecContent {
+        p {
+            &:not(:last-child) {
+                padding-bottom: 5px;
+            }
+        }
+    }
+}
+@media(max-width: 568px) {
+    .section {
+        padding-bottom: 48px;
 
+    }
+    .sectionImg {
+        margin-top: -42px;
+
+        img{
+            margin-bottom: 40px;
+        }
+    }
 }

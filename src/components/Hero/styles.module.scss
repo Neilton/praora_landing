@@ -1,9 +1,33 @@
 .section {
-    padding-top: 68px;
-    padding-bottom: 60px;
+  padding-top: 68px;
+  padding-bottom: 60px;
+  p {
+    padding-bottom: 65px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 834px) {
+  .section {
+    padding-top: 28px;
+    padding-bottom: 120px;
+    padding-top: 42px;
+        padding-bottom: 60px;
     p {
-        padding-bottom: 65px;
-        font-size: 20px;
-        line-height: 30px;
+      padding-bottom: 32px;
     }
+  }
+}
+
+@media (max-width: 568px) {
+  .section {
+    padding-top: 28px;
+    padding-bottom: 120px;
+    .sectionImg {
+      img{
+
+        display: none;
+      }
+    }
+  }
 }

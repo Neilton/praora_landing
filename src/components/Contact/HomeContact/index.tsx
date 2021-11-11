@@ -7,7 +7,7 @@ function HomeContact() {
         <Container>
             <Row className="row section7-row">
                 <div className="col-lg-7">
-                    <div className="section-content section7-content pr-0 pr-lg-3">
+                    <div className={`section-content ${styles.content} pr-0 pr-lg-3`}>
                         <h4>Se interessou pela <b>Praora?</b></h4>
                         <p>
                             Fique por dentro da lista de investidores, sendo o primeiro a <br /> saber sobre nosso

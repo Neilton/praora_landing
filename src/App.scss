@@ -1,13 +1,14 @@
 @import "~bootstrap/scss/bootstrap";
 
-
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #fff;
 }
 
@@ -41,4 +42,38 @@ p {
   margin-bottom: 0;
   font-size: 24px;
   line-height: 36px;
+}
+
+@media (max-width: 1280px) {
+  p {
+    font-size: 22px;
+    line-height: 33px;
+  }
+}
+
+@media (max-width: 1024px) {
+  h4 {
+    font-size: 29px;
+    line-height: 41px;
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 834px) {
+  h4 {
+    font-size: 24px;
+    line-height: 35px;
+    padding-bottom: 14px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  h4 br {
+    display: none;
+}
 }

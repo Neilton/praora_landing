@@ -20,7 +20,7 @@ function Hero() {
                     </div>
                 </div>
                 <div className="col-md-6">
-                    <div className="section-content section1-content-img">
+                    <div className={`section-content ${styles.sectionImg}`}>
                         <img src={amico} className="img-fluid" alt="" />
                     </div>
                 </div>

@@ -2,3 +2,10 @@
     padding-top: 44px;
     padding-bottom: 30px;
 }
+@media(max-width: 568px) {
+    .sectionImg {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+}

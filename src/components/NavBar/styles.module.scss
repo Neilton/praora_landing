@@ -24,7 +24,6 @@
 }
 
 .navWrp {
-  
   margin-left: auto;
   display: flex;
   align-items: center;
@@ -49,43 +48,101 @@
 
 .navbarBrand,
 .footerLogo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbarBrand span,
 .footerLogo span {
-    font-family: 'CyclicSans-Light';
-    font-size: 42.1955px;
-    line-height: 47px;
-    margin-left: 20px;
-    font-weight: 300;
+  font-family: "CyclicSans-Light";
+  font-size: 42.1955px;
+  line-height: 47px;
+  margin-left: 20px;
+  font-weight: 300;
 }
 
 .navbarBrand span {
-    color: #000;
+  color: #000;
 }
 
 .footerLogo span {
-    color: #fff;
+  color: #fff;
 }
 
 .toggleBar {
-    display: none;
-    margin-left: 46px;
-    cursor: pointer;
+  display: none;
+  margin-left: 46px;
+  cursor: pointer;
 }
 
 .submBtn,
 .headerBtn,
 .btn {
-    background: #1C1C1C;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
+  background: #1c1c1c;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fafafa;
+}
+
+@media (max-width: 1024px) {
+  .navWrp {
+    button {
+      width: 210px;
+    }
+    margin-right: 30px;
+    .navLink {
+      font-size: 14px;
+      padding: 0rem 1rem;
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .navbar {
+    height: 90px;
+    span {
+      font-size: 39px;
+      margin-left: 17px;
+    }
+  }
+  .navbar.scrolled {
+    height: 65px;
+  }
+
+  .navWrp {
+    margin-right: 0;
+    margin-left: inherit;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    min-height: 100vh;
+    background-color: #fff;
+    z-index: 1211;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 30px;
+    display: none;
+  }
+  .nav-wrp.active {
+    display: block;
+  }
+  .navLink {
     font-size: 16px;
-    line-height: 24px;
-    color: #FAFAFA;
+    padding: 0.4rem 1em;
+  }
+}
+
+@media (max-width: 568px) {
+  .navbar {
+    span {
+      font-size: 36px;
+      margin-left: 14px;
+    }
+  }
 }

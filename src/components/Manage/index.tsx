@@ -21,7 +21,7 @@ function Manage() {
             </div>
           </div>
           <div className="col-md-5">
-            <div className="section-content section5-content-img">
+            <div className={`section-content ${styles.sectionImg}`}>
               <img
                 src={amicoMoney}
                 className="img-fluid"
