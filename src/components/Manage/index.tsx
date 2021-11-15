@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 import amicoMoney from "../../assets/img/amico-money.png";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Image } from "react-bootstrap";
 
 function Manage() {
   return (
@@ -22,11 +22,7 @@ function Manage() {
           </div>
           <div className="col-md-5">
             <div className={`section-content ${styles.sectionImg}`}>
-              <img
-                src={amicoMoney}
-                className="img-fluid"
-                alt=""
-              />
+              <Image src={amicoMoney} className="img-fluid" alt="" fluid />
             </div>
           </div>
         </Row>

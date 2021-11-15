@@ -1,21 +1,23 @@
 import logoWhite from "../../assets/img/logo-white.png";
-import { Card, Container, Row } from "react-bootstrap";
-import styles from "./styles.module.scss"
+import { Card, Col, Container, Row, Image } from "react-bootstrap";
+import styles from "./styles.module.scss";
 function Footer() {
   return (
     <Card.Footer className={styles.footer}>
       <Container>
         <Row>
-          <div className="col-md-6">
-            <div className={`${styles.footerContent} ${styles.footerLeftContent}`}>
+          <Col md={6}>
+            <div
+              className={`${styles.footerContent} ${styles.footerLeftContent}`}
+            >
               <a href="#" className={styles.logo}>
-                <img src={logoWhite} alt="Praora logo" />
+                <Image src={logoWhite} alt="Praora logo" />
                 <span>praora</span>
               </a>
               <p>Inspirando conexões</p>
             </div>
-          </div>
-          <div className="col-md-6">
+          </Col>
+          <Col md={6}>
             <div className={`${styles.footerContent} ${styles.footerMenu}`}>
               <ul>
                 <li>
@@ -32,7 +34,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-          </div>
+          </Col>
         </Row>
       </Container>
     </Card.Footer>

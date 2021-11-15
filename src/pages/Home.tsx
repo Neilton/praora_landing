@@ -1,3 +1,4 @@
+import { Container } from "react-bootstrap";
 import About from "../components/About";
 import HomeContact from "../components/Contact/HomeContact";
 import Hero from "../components/Hero";

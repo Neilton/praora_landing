@@ -1,12 +1,16 @@
 .section {
-    
     color: #fff;
 }
-.darkSecContent{
+.darkSection{
     background: #1C1C1C;
+    p {
+        &:not(:last-child) {
+            padding-bottom: 10px;
+        }
+    }
 }
 @media(max-width: 834px) {
-    .darkSecContent {
+    .darkSection {
         p {
             &:not(:last-child) {
                 padding-bottom: 5px;

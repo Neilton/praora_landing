@@ -31,11 +31,14 @@
     color: #757574;
   }
 }
+@media (max-width: 1024px) {
+  .form {
+    border-left: none;
+  }
+}
 
 @media (max-width: 834px) {
-  .sectionForm {
-    border-left: 0;
-  }
+
   .content {
     h4 {
       text-align: center;

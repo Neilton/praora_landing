@@ -1,12 +1,12 @@
 import styles from "./styles.module.scss";
-import { Container, Form, Row } from "react-bootstrap";
+import { Col, Container, Form, Row } from "react-bootstrap";
 import Button from "../../Core/Button";
 function HomeContact() {
     return(
         <section className={styles.section} id="contact">
         <Container>
-            <Row className="row section7-row">
-                <div className="col-lg-7">
+            <Row className="section7-row">
+                <Col lg={7}>
                     <div className={`section-content ${styles.content} pr-0 pr-lg-3`}>
                         <h4>Se interessou pela <b>Praora?</b></h4>
                         <p>
@@ -14,8 +14,8 @@ function HomeContact() {
                             whitepaper e ter <b>descontos exclusivos <br /> nos nossos tokens.</b>
                         </p>
                     </div>
-                </div>
-                <div className={`col-lg-5 ${styles.form}`}>
+                </Col>
+                <Col lg={5} className={styles.form}>
                     <Form action="" className={`${styles.signupForm} pl-0 pl-lg-5`}>
                         <Form.Group className={styles.formGroup}>
                             <Form.Control type="email" className={styles.formControl} id="usr_email" placeholder="Seu email" />
@@ -29,7 +29,7 @@ function HomeContact() {
                         </Form.Group>
                         <Button>Inscreva-me</Button>
                     </Form>
-                </div>
+                </Col>
             </Row>
         </Container>
     </section>

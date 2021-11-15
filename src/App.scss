@@ -1,10 +1,29 @@
+$container-max-widths: (
+  sm: 576px,
+  md: 768px,
+  lg: 960px,
+  xl: 1330px
+) !default;
+
+
 @import "~bootstrap/scss/bootstrap";
+@font-face {
+  font-family: 'CyclicSans-Light';
+  src: 
+      url('./assets/fonts/CyclicSans-Light.woff') format('woff'),
+      url('./assets/fonts/CyclicSans-Light.woff2') format('woff2'),
+      url('./assets/fonts/CyclicSans-Light.eot'),
+      url('./assets/fonts/CyclicSans-Light.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/CyclicSans-Light.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 body {

@@ -6,6 +6,8 @@
   display: flex;
   align-items: center;
   transition: height 0.7ms 0.3s ease;
+  max-width: 1300px;
+  margin: auto;
 }
 .navbar.scrolled {
   width: 100%;
@@ -27,7 +29,6 @@
   margin-left: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-bottom: 0;
   margin-right: 107px;
 }
@@ -73,25 +74,18 @@
   display: none;
   margin-left: 46px;
   cursor: pointer;
+  border: none;
+  color: #212529;
 }
 
-.submBtn,
-.headerBtn,
-.btn {
-  background: #1c1c1c;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  color: #fafafa;
+.headerBtn {
+  width: 250px;
+  height: 48px;
 }
 
 @media (max-width: 1024px) {
   .navWrp {
-    button {
+    .headerBtn {
       width: 210px;
     }
     margin-right: 30px;
@@ -99,6 +93,9 @@
       font-size: 14px;
       padding: 0rem 1rem;
     }
+  }
+  .headerBtn {
+    width: 210px;
   }
 }
 
@@ -136,13 +133,28 @@
     font-size: 16px;
     padding: 0.4rem 1em;
   }
+  .toggleBar {
+    display: block;
+  }
+  .headerBtn {
+    width: 250px;
+    height: 48px;
+
+    margin-left: auto;
+  }
 }
 
 @media (max-width: 568px) {
   .navbar {
+    .headerBtn {
+      display: none;
+    }
     span {
       font-size: 36px;
       margin-left: 14px;
     }
+  }
+  .toggleBar {
+    margin-left: auto;
   }
 }

@@ -2,7 +2,6 @@
   background: #1c1c1c;
   padding: 69px 0px;
 }
-
 .footerContent {
   a,
   p {
@@ -32,7 +31,6 @@
     display: flex;
     align-items: center;
     padding-bottom: 11px;
-
     span {
       font-family: "CyclicSans-Light";
       font-size: 42.1955px;
@@ -42,14 +40,13 @@
       color: #fff;
     }
   }
-  .footerMenu {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 90px;
-    margin-top: -5px;
-  }
 }
-
+.footerMenu {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 90px;
+  margin-top: -5px;
+}
 @media (max-width: 834px) {
   .footer {
     padding: 50px 0px;
@@ -62,7 +59,7 @@
   .loogo {
     span {
       font-size: 39px;
-        margin-left: 17px;
+      margin-left: 17px;
     }
   }
   .footerMenu {
@@ -70,7 +67,6 @@
     margin-top: 0;
   }
 }
-
 @media (max-width: 568px) {
   .footer {
     padding: 40px 0px;
@@ -103,6 +99,5 @@
   }
   .footerMenu {
     justify-content: flex-start;
-
   }
 }
