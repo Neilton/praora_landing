@@ -1,8 +1,11 @@
 import styles from "./styles.module.scss";
 import amicoMoney from "../../assets/img/amico-money.png";
 import { Container, Row, Image } from "react-bootstrap";
+import { useTranslation } from 'react-i18next';
 
 function Manage() {
+  const [t] = useTranslation();
+
   return (
     <section className={styles.section}>
       <Container>
@@ -10,13 +13,11 @@ function Manage() {
           <div className="col-md-7">
             <div className="section-content">
               <h4>
-                Gerencie seus ganhos e faça <br /> transações facilmente
+              {t('ManageEarnings')} <br /> {t('TransactionsEasily')}
               </h4>
               <p>
-                Crie uma nova ou utilize a sua própria carteira digital para
-                gerenciar o quanto você ganha na plataforma. Você pode fazer
-                transações dentro da Praora, de forma descomplicada e{" "}
-                <b>sem exposição de dados.</b>
+              {t('CreateNewOneOrImportyourown')}{" "}
+                <b>{t('NoDataExposure')}.</b>
               </p>
             </div>
           </div>

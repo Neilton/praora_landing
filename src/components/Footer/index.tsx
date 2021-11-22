@@ -27,7 +27,7 @@ function Footer() {
                   <a href="#">Recursos</a>
                 </li>
                 <li>
-                  <a href="#">Como começar?</a>
+                  <a href="#">Como começar?</a>∫
                 </li>
                 <li>
                   <a href="#">Contato</a>

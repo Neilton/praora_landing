@@ -1,8 +1,11 @@
 import styles from "./styles.module.scss";
 import pana from "../../assets/img/pana.png";
 import { Container, Row, Image } from "react-bootstrap";
+import { useTranslation } from 'react-i18next';
 
 function Market() {
+  const [t] = useTranslation();
+
   return (
     <section
       className={`${styles.section} ${styles.sectionDark} ${styles.darkSection}`}
@@ -18,12 +21,10 @@ function Market() {
           <div className="col-md-7 p-0 text-right">
             <div className={`section-content ${styles.content}`}>
               <h4>
-                Venda seu conteúdo e suas <br /> produções digitais
+                {t('SellContent')} <br /> {t('DigitalProduction')}
               </h4>
-              <p>Você quer vender o desenho digital que produziu em live de forma
-                fácil e rápida? Na Praora, você consegue anunciar na sua live ou
-                deixar no seu canal suas produções e vendê-las ao público. <b> 
-                  Tudo através da sua carteira digital cadastrada na plataforma.
+              <p>{t('PublishAdsLives')} <b> 
+              {t('WalletBlockChain')}.
                 </b>
               </p>
             </div>

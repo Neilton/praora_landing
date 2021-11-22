@@ -1,8 +1,11 @@
 import styles from "./styles.module.scss";
 import bro from "../../assets/img/bro.png";
 import { Col, Container, Row, Image } from "react-bootstrap";
+import { useTranslation } from 'react-i18next';
 
 function About() {
+  const [t] = useTranslation();
+
   return (
     <section className={`${styles.section} ${styles.darkSection}`}>
       <Container>
@@ -14,15 +17,13 @@ function About() {
           </Col>
           <Col md={7} className="text-right">
             <div className={`section-content ${styles.darkSecContent}`}>
-              <h4>O que é a praora?</h4>
+              <h4>{t('whatisPraora.description')}</h4>
               <p>
-                A Praora é uma <b>plataforma de streaming</b> que unifica todos
-                os recursos que você precisa para gerenciar suas lives e ter
-                controle dos seus ganhos como produtor de conteúdo.
+              {t('whatisPraora.part1')}<b>{t('platformStreaming')}</b> {t('whatisPraora.part2')}
               </p>
               <p>
-                Você pode facilmente iniciar uma live, criar sorteios e vender
-                produtos: <b>Tudo no mesmo lugar!</b>
+              {t('whatisPraora.part3')}
+              <b> {t('whatisPraora.part4')}</b>
               </p>
             </div>
           </Col>

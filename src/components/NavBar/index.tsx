@@ -5,9 +5,12 @@ import logo from "../../assets/img/logo.png";
 import bar from "../../assets/img/icon/bar.png";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
-
 import Button from "../Core/Button";
+import { useTranslation } from "react-i18next";
+
 function NavBar() {
+  const [t] = useTranslation();
+
   return (
     <Navbar
       fixed="top"
@@ -19,10 +22,10 @@ function NavBar() {
       <Container fluid="xl">
         <div className={styles.navbarContent}>
           <Navbar.Brand href="#home">
-            <a href="#" className={styles.navbarBrand}>
+            <div className={styles.navbarBrand}>
               <Image src={logo} alt="" fluid />
               <span>praora</span>
-            </a>
+            </div>
           </Navbar.Brand>
 
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -31,10 +34,10 @@ function NavBar() {
                 <Nav.Link className={styles.navItem}>
                   <a
                     href="#!"
-                    data-scroll="whatispraora"
+                    data-scroll="recursos"
                     className={styles.navLink}
                   >
-                    O que é a Praora
+                     {t('resources')}
                   </a>
                 </Nav.Link>
               </Nav.Item>
@@ -42,10 +45,10 @@ function NavBar() {
                 <Nav.Link className={styles.navItem}>
                   <a
                     href="#!"
-                    data-scroll="recursos"
+                    data-scroll="team"
                     className={styles.navLink}
                   >
-                    Recursos
+                     {t('team')}
                   </a>
                 </Nav.Link>
               </Nav.Item>
@@ -56,21 +59,28 @@ function NavBar() {
                     data-scroll="howtobeg"
                     className={styles.navLink}
                   >
-                    Como começar?
+                    {t('roadmap')}
                   </a>
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link className={styles.navItem}>
                   <a href="#!" data-scroll="contact" className={styles.navLink}>
-                    Contato
+                  {t('docs')}
+                  </a>
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link className={styles.navItem}>
+                  <a href="#!" data-scroll="contact" className={styles.navLink}>
+                  {t('contact')}
                   </a>
                 </Nav.Link>
               </Nav.Item>
             </div>
           </Navbar.Collapse>
           <Button>
-            <a>Acessar a plataforma</a>
+            {t('whitepaper')}
           </Button>
           <Navbar.Toggle className={` ${styles.toggleBar}`}>
             <Image src={bar} className="img-fluid" alt="" />
