@@ -9,7 +9,7 @@ function HomeContact() {
     return(
         <section className={styles.section} id="contact">
         <Container>
-            <Row className="section7-row">
+            <Row className="section7-row ml-1 mr-1 row">
                 <Col lg={7}>
                     <div className={`section-content ${styles.content} pr-0 pr-lg-3`}>
                         <h4>{t('interestedInPraora')} <b>Praora?</b></h4>

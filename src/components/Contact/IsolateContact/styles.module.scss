@@ -1,0 +1,124 @@
+.contactWrap {
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+.contactContent {
+    padding-left: 72px;
+}
+
+.contactContent p {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 40px;
+}
+
+.contactForm {
+    background: #FFFFFF;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    padding: 30px 19px;
+    position: relative;
+    width: 95%;
+    margin-top: 7px;
+}
+
+.contactForm::after {
+    content: '';
+    position: absolute;
+    right: -34px;
+    top: 40px;
+    width: 100%;
+    height: 98.5%;
+    background: #1C1C1C;
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.contactForm h6 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.0015em;
+    color: #1C1C1C;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.socialWrp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.socialWrp li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.formHeading {
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.form-heading h6 {
+    background: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.formHr {
+    height: 1px;
+    flex: 1;
+    background: #939393;
+    border: 0;
+}
+
+.formContent {
+    width: 79%;
+    margin: auto;
+}
+
+.formContent label {
+    font-size: 14px;
+    line-height: 21px;
+    color: #1C1C1C;
+    margin-bottom: 8px;
+    margin-left: 4px;
+}
+
+.formContent .formControl {
+    background: #FAFAFA;
+    border: 1px solid #939393;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 48px;
+    outline: none;
+    box-shadow: none;
+    font-size: 14px;
+    line-height: 21px;
+    color: #939393;
+    padding: 14px 15px;
+}
+
+.formContent .formControl::placeholder {
+    color: #939393;
+}
+
+.formContent .formGroup {
+    margin-bottom: 25px;
+}
+
+.formContent textarea {
+    height: 130px !important;
+    resize: none;
+}
+
+.submBtn {
+    outline: none;
+    border: none;
+    margin: auto;
+}

@@ -7,7 +7,7 @@ function Resources() {
   const [t] = useTranslation();
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="resources">
       <Container>
         <Row>
           <div className="col-md-8 section-content-heading">

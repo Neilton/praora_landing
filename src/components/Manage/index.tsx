@@ -9,7 +9,7 @@ function Manage() {
   return (
     <section className={styles.section}>
       <Container>
-        <Row className="row align-items-center">
+        <Row className="row align-items-cente ml-1 mr-1 rowr">
           <div className="col-md-7">
             <div className="section-content">
               <h4>

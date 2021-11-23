@@ -6,33 +6,19 @@ function Footer() {
     <Card.Footer className={styles.footer}>
       <Container>
         <Row>
-          <Col md={6}>
+          <Col md={12}>
             <div
-              className={`${styles.footerContent} ${styles.footerLeftContent}`}
+              className={styles.footerContent}
             >
-              <a href="#" className={styles.logo}>
-                <Image src={logoWhite} alt="Praora logo" />
-                <span>praora</span>
-              </a>
-              <p>Inspirando conexões</p>
-            </div>
-          </Col>
-          <Col md={6}>
-            <div className={`${styles.footerContent} ${styles.footerMenu}`}>
-              <ul>
-                <li>
-                  <a href="#">O que é a Praora</a>
-                </li>
-                <li>
-                  <a href="#">Recursos</a>
-                </li>
-                <li>
-                  <a href="#">Como começar?</a>∫
-                </li>
-                <li>
-                  <a href="#">Contato</a>
-                </li>
-              </ul>
+                <a href="" className={styles.logo}>
+                  <Image src={logoWhite} alt="Praora logo" />
+                  <span>praora</span>
+                </a>
+                <div className={styles.logoSection}>
+              </div>
+              <div className={styles.networkSection}>
+                <p className="text-center">Praora Network</p>
+              </div>
             </div>
           </Col>
         </Row>

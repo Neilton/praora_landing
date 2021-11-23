@@ -1,13 +1,13 @@
 @import "../../App.scss";
 
 .navbar {
-  padding: 0px 0px;
   height: 112px;
   display: flex;
   align-items: center;
   transition: height 0.7ms 0.3s ease;
   max-width: 1300px;
   margin: auto;
+  padding: 0px 30px;
 }
 .navbar.scrolled {
   width: 100%;

@@ -9,7 +9,7 @@ function More() {
   return (
     <section className={styles.section}>
       <Container>
-        <Row className={`row ${styles.sectionRow}`}>
+        <Row className={`row ${styles.sectionRow} ml-1 mr-1 row`}>
           <div className="col-md-3">
             <div className={`section-content ${styles.sectionImg}`}>
               <Image src={cuate} fluid className="img-fluid" alt="" />

@@ -41,5 +41,15 @@
     },
     "YourEmail": "Your Email",
     "WalletAddress": "Wallet Address. Eg: 0x38E...3TjK",
-    "GetinTouch": "Get in Touch"
+    "GetinTouch": "Get in Touch",
+    "ContactUs": "Contact Us",
+    "QuestionOrSuggestions": "If you have any questions or suggestions, please contact us. We will be happy to help you!",
+    "SocialMedias": "Check our social medias",
+    "SendUsMessage": "or send to us your message",
+    "YourName": "Your name",
+    "YourMessage": "Your message",
+    "SendMessage": "Send your message",
+    "EgJohnnyBravo": "Eg: Johnny Bravo",
+    "EmailSample": "email@example.com",
+    "Message": "Message"
   }

@@ -12,7 +12,7 @@ function Hero() {
     <section className={styles.section}>
 
       <Container fluid="sm">
-        <Row className="row align-items-center">
+        <Row className="row align-items-center ml-1 mr-1 row">
           <Col md={6}>
             <div className="section-content section1-content">
               <h4>

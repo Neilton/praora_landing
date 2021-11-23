@@ -41,5 +41,15 @@
   },
   "YourEmail": "Seu email",
   "WalletAddress": "Endereço da carteira. Ex: 0x38E...3TjK",
-  "GetinTouch": "Inscreva-me"
+  "GetinTouch": "Inscreva-me",
+  "ContactUs": "Entre em contato conosco",
+  "QuestionOrSuggestions": "Se você tem alguma dúvida ou sugestão, entre em contato conosco. Ficaremos felizes em poder te ajudar!",
+  "SocialMedias": "Veja nossas redes sociais",
+  "SendUsMessage": "Ou nos mande uma mensagem direta",
+  "YourName": "Seu nome",
+  "YourMessage": "Sua mensagem",
+  "SendMessage": "Enviar mensagem",
+  "EgJohnnyBravo": "Ex: Johnny Bravo",
+  "EmailSample": "email@exemplo.com.br",
+  "Message": "Mensagem"
 }

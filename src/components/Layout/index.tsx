@@ -1,5 +1,3 @@
-import { ReactNode } from "react";
-import { Container } from "react-bootstrap";
 import { Outlet } from "react-router";
 import Footer from "../Footer";
 import NavBar from "../NavBar/";

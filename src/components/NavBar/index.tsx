@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Button from "../Core/Button";
 import { useTranslation } from "react-i18next";
+import { Link, Button as Sbutton, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 function NavBar() {
   const [t] = useTranslation();
@@ -32,13 +33,13 @@ function NavBar() {
             <div className={`${styles.navWrp}`}>
               <Nav.Item>
                 <Nav.Link className={styles.navItem}>
-                  <a
-                    href="#!"
-                    data-scroll="recursos"
+                  <Link
+                    to="resources"
+                    spy={true} smooth={true} offset={50} duration={600} delay={100}
                     className={styles.navLink}
                   >
                      {t('resources')}
-                  </a>
+                  </Link>
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
