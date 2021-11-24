@@ -43,17 +43,15 @@ function NavBar() {
                   </RLink>
                 </Nav.Link>
               </Nav.Item>
-              <Nav.Item>
-                <Nav.Link className={styles.navItem}>
-                  <a
-                    href="#!"
-                    data-scroll="team"
+              <Nav.Link className={styles.navItem}>
+                <RLink
+                    to="whatispraora"
+                    spy={true} smooth={true} offset={50} duration={600} delay={100}
                     className={styles.navLink}
                   >
-                     {t('team')}
-                  </a>
+                     {t('WhatIsPraora')}
+                  </RLink>
                 </Nav.Link>
-              </Nav.Item>
               <Nav.Item>
                 <Nav.Link className={styles.navItem}>
                   <a

@@ -7,7 +7,7 @@ function About() {
   const [t] = useTranslation();
 
   return (
-    <section className={`${styles.section} ${styles.darkSection}`}>
+    <section className={`${styles.section} ${styles.darkSection}`} id="WhatIsPraora">
       <Container>
         <Row className="align-items-center">
           <Col className="col-md-5 pt-0 pt-md-4 pt-lg-4 pb-0 pb-md-2 pb-lg-2">
