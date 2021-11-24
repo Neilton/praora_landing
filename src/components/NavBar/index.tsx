@@ -72,18 +72,12 @@ function NavBar() {
                     </RLink>
                 </Nav.Link>
               </Nav.Item>
-              <Nav.Item>
-                <Nav.Link className={styles.navItem}>
-                  <a href="#!" data-scroll="contact" className={styles.navLink}>
-                  {t('docs')}
-                  </a>
-                </Nav.Link>
-              </Nav.Item>
             </div>
           </Navbar.Collapse>
-          {!isMobile && <Button className={styles.headerBtn}>
+          {!isMobile && <a href={"https://docs.praora.com/whitepaper" } aria-label='Whitepaper' target="_blank" rel="noreferrer"> <Button className={styles.headerBtn}>
             {t('whitepaper')}
-          </Button>}
+          </Button>
+          </a>}
           <Navbar.Toggle className={styles.toggleBar}>
             <Image src={bar} className="img-fluid" alt="" />
           </Navbar.Toggle>
