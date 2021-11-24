@@ -42,6 +42,11 @@
 }
 
 .navWrp .navLink .navItem{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1c1c1c !important;
+
   &:hover {
     color: #1c1c1c9f !important;
   }
@@ -74,11 +79,9 @@
 }
 
 .toggleBar {
-  display: none;
-  margin-left: 46px;
-  cursor: pointer;
-  border: none;
-  color: #212529;
+    display: none;
+    margin-left: 46px;
+    cursor: pointer;
 }
 
 .headerBtn {
@@ -103,6 +106,10 @@
 }
 
 @media (max-width: 834px) {
+  .toggleBar {
+    margin-left: auto;
+  }
+
   .navbar {
     height: 90px;
     span {
@@ -140,10 +147,7 @@
     display: block;
   }
   .headerBtn {
-    width: 250px;
-    height: 48px;
-
-    margin-left: auto;
+    display: none;
   }
 }
 

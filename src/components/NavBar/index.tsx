@@ -7,8 +7,8 @@ import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Button from "../Core/Button";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 import { Link as RLink } from "react-scroll";
+import { isMobile } from 'react-device-detect';
 
 function NavBar() {
   const [t] = useTranslation();
@@ -37,7 +37,7 @@ function NavBar() {
                 <RLink
                     to="resources"
                     spy={true} smooth={true} offset={50} duration={600} delay={100}
-                    className={styles.navRLink}
+                    className={styles.navLink}
                   >
                      {t('resources')}
                   </RLink>
@@ -77,16 +77,16 @@ function NavBar() {
                 <RLink
                     to="contact"
                     spy={true} smooth={true} offset={50} duration={600} delay={100}
-                    className={styles.navRLink}>{t('contact')}
+                    className={styles.navLink}>{t('contact')}
                     </RLink>
                 </Nav.Link>
               </Nav.Item>
             </div>
           </Navbar.Collapse>
-          <Button>
+          {!isMobile && <Button className={styles.headerBtn}>
             {t('whitepaper')}
-          </Button>
-          <Navbar.Toggle className={` ${styles.toggleBar}`}>
+          </Button>}
+          <Navbar.Toggle className={styles.toggleBar}>
             <Image src={bar} className="img-fluid" alt="" />
           </Navbar.Toggle>
         </div>
