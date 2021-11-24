@@ -35,21 +35,21 @@ function NavBar() {
               <Nav.Item>
                 <Nav.Link className={styles.navItem}>
                 <RLink
-                    to="resources"
+                    to="WhatIsPraora"
                     spy={true} smooth={true} offset={50} duration={600} delay={100}
                     className={styles.navLink}
                   >
-                     {t('resources')}
+                     {t('WhatIsPraora')}
                   </RLink>
                 </Nav.Link>
               </Nav.Item>
               <Nav.Link className={styles.navItem}>
                 <RLink
-                    to="whatispraora"
+                    to="resources"
                     spy={true} smooth={true} offset={50} duration={600} delay={100}
                     className={styles.navLink}
                   >
-                     {t('WhatIsPraora')}
+                     {t('resources')}
                   </RLink>
                 </Nav.Link>
               <Nav.Item>
@@ -65,18 +65,18 @@ function NavBar() {
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link className={styles.navItem}>
-                  <a href="#!" data-scroll="contact" className={styles.navLink}>
-                  {t('docs')}
-                  </a>
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link className={styles.navItem}>
                 <RLink
                     to="contact"
                     spy={true} smooth={true} offset={50} duration={600} delay={100}
                     className={styles.navLink}>{t('contact')}
                     </RLink>
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link className={styles.navItem}>
+                  <a href="#!" data-scroll="contact" className={styles.navLink}>
+                  {t('docs')}
+                  </a>
                 </Nav.Link>
               </Nav.Item>
             </div>
