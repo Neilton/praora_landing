@@ -27,7 +27,7 @@ function Contact() {
                 <ul className={styles.socialWrp}>
                   <li><a href="#" target="__blank"><img src={Whatsapp} alt="Whatsapp" /></a></li>
                   <li><a href="#" target="__blank"><img src={Grommet} alt="Groment" /></a></li>
-                  <li><a href="#" target="__blank"><img src={Telegram} alt="Telegram" /></a></li>
+                  <li><a href="https://praora.slack.com/messages/general/" target="__blank" rel="noopen"><img src={Telegram} alt="Telegram" /></a></li>
                 </ul>
                 <div className={`${styles.formHeading} position-relative`}>
                   <hr className={styles.formHr} />
