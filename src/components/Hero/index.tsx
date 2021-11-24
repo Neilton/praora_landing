@@ -19,9 +19,7 @@ function Hero() {
                 {t('subTitle')}
               </h4>
               <p>
-                <b>
                 {t('description.part1')} {t('description.part2')}
-                </b>
               </p>
               <Button>
                 {t('getStarted')}
