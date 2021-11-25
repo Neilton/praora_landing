@@ -1,9 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import React from "react";
 import Rafiki from "../../../assets/img/rafiki.png";
-import Whatsapp from "../../../assets/img/icon/whatsapp.png";
 import Slack from "../../../assets/img/icon/slack.png";
-import Telegram from "../../../assets/img/icon/telegram.png";
 import styles from "./styles.module.scss";
 import Button from "../../Core/Button";
 
@@ -17,7 +15,7 @@ function Contact() {
             <div className="col-lg-7">
               <div className={styles.contactContent}>
                 <h4>{t('ContactUs')}</h4>
-                <p><b>{t('QuestionOrSuggestions')}</b></p>
+                <p>{t('QuestionOrSuggestions')}</p>
                 <img src={Rafiki} alt="" className="img-fluid" />
               </div>
             </div>
