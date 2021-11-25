@@ -41,16 +41,17 @@
   padding: 0rem 1.32rem;
 }
 
-.navWrp .navLink .navItem{
+.navWrp .navLink .navItem {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #1c1c1c !important;
+  padding: 0rem 1.32rem;
 
   &:hover {
     color: #1c1c1c9f !important;
   }
-  &:visited &:link{
+  &:visited &:link {
     color: #1c1c1c9f !important;
   }
 }
@@ -79,9 +80,9 @@
 }
 
 .toggleBar {
-    display: none;
-    margin-left: 46px;
-    cursor: pointer;
+  display: none;
+  margin-left: 46px;
+  cursor: pointer;
 }
 
 .headerBtn {
@@ -107,7 +108,7 @@
 
 @media (max-width: 834px) {
   .toggleBar {
-    margin-left: auto;
+    display: block;
   }
 
   .navbar {
@@ -136,9 +137,10 @@
     padding-top: 30px;
     display: none;
   }
-  .nav-wrp.active {
+  .navWrp.activated {
     display: block;
   }
+  
   .navLink {
     font-size: 16px;
     padding: 0.4rem 1em;
@@ -153,9 +155,6 @@
 
 @media (max-width: 568px) {
   .navbar {
-    .headerBtn {
-      display: none;
-    }
     span {
       font-size: 36px;
       margin-left: 14px;
@@ -163,5 +162,8 @@
   }
   .toggleBar {
     margin-left: auto;
+  }
+  .headerBtnLink {
+    display: none;
   }
 }
