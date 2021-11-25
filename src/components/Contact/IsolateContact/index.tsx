@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import React from "react";
 import Rafiki from "../../../assets/img/rafiki.png";
 import Whatsapp from "../../../assets/img/icon/whatsapp.png";
-import Grommet from "../../../assets/img/icon/slack.png";
+import Slack from "../../../assets/img/icon/slack.png";
 import Telegram from "../../../assets/img/icon/telegram.png";
 import styles from "./styles.module.scss";
 import Button from "../../Core/Button";
@@ -25,9 +25,7 @@ function Contact() {
               <div className={styles.contactForm}>
                 <h6>{t('SocialMedias')}</h6>
                 <ul className={styles.socialWrp}>
-                  <li><a href="#" target="__blank"><img src={Whatsapp} alt="Whatsapp" /></a></li>
-                  <li><a href="#" target="__blank"><img src={Grommet} alt="Groment" /></a></li>
-                  <li><a href="https://praora.slack.com/messages/general/" target="__blank" rel="noopen"><img src={Telegram} alt="Telegram" /></a></li>
+                  <li><a href="https://praora.slack.com/messages/general/" target="__blank" rel="noopen"><img src={Slack} alt="Slack" /></a></li>
                 </ul>
                 <div className={`${styles.formHeading} position-relative`}>
                   <hr className={styles.formHr} />
