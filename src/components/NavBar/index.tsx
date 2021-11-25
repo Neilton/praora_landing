@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "./styles.module.scss";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -9,7 +10,6 @@ import Button from "../Core/Button";
 import { useTranslation } from "react-i18next";
 import { Link as RLink } from "react-scroll";
 import { isMobile } from "react-device-detect";
-import { useState } from "react";
 
 function NavBar() {
   const [t] = useTranslation();
@@ -34,9 +34,7 @@ function NavBar() {
           </Navbar.Brand>
 
           <Navbar.Collapse id="responsive-navbar-nav">
-            {/* <div className={isOpen ? `${styles.navWrp} ${styles.activated}` : styles.navWrap}> */}
-            <div className={styles.navWrp}>
-
+            <div className={isOpen ? `${styles.navWrp} ${styles.activated} ` : `${styles.navWrp} ${styles.navWrap}`}>
              <Nav.Item>
                 <Nav.Link className={styles.navItem}>
                   <RLink
@@ -91,6 +89,7 @@ function NavBar() {
                   </RLink>
                 </Nav.Link>
               </Nav.Item>
+            {/* </div> */}
             </div>
           </Navbar.Collapse>
           {!isMobile && (
@@ -109,10 +108,6 @@ function NavBar() {
           <div className={styles.toggleBar} onClick={handleClick}>
             <Image src={bar} fluid alt="" />
           </div>
-
-          {/* <Navbar.Toggle className={styles.toggleBar}>
-            <Image src={bar} className="img-fluid" alt="" />
-          </Navbar.Toggle> */}
         </div>
       </Container>
     </Navbar>
