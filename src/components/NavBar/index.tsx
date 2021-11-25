@@ -34,7 +34,9 @@ function NavBar() {
           </Navbar.Brand>
 
           <Navbar.Collapse id="responsive-navbar-nav">
-            <div className={isOpen ? `${styles.navWrp} ${styles.activated}` : styles.navWrap}>
+            {/* <div className={isOpen ? `${styles.navWrp} ${styles.activated}` : styles.navWrap}> */}
+            <div className={styles.navWrp}>
+
              <Nav.Item>
                 <Nav.Link className={styles.navItem}>
                   <RLink
