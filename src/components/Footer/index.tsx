@@ -10,7 +10,7 @@ function Footer() {
             <div
               className={styles.footerContent}
             >
-                <a href="" className={styles.logo}>
+                <a href="https://praora.com" className={styles.logo}>
                   <Image src={logoWhite} alt="Praora logo" />
                   <span>praora</span>
                 </a>
