@@ -58,5 +58,6 @@
     "EmailRequired": "Email is required",
     "MessageWrong": "Something is wrong on this area.",
     "ThanksForYourInteresting": "Wow! Thanks for your interesting",
-    "HumSomethingGoesWrong": "Hum... Something goes wrong with your."
+    "HumSomethingGoesWrong": "Hum... Something goes wrong with your.",
+    "ReCAPTCHA": "Please, use the ReCAPTCHA."
   }

@@ -58,5 +58,6 @@
   "EmailRequired": "Digite seu e-mail.",
   "MessageWrong": "Tem alguma coisa errada nesse campo.",
   "ThanksForYourInteresting": "Uau! Obrigado pelo seu interesse.",
-  "HumSomethingGoesWrong": "Hum... Alguma coisa deu errado no formulário."
+  "HumSomethingGoesWrong": "Hum... Alguma coisa deu errado no formulário.",
+  "ReCAPTCHA": "Por favor, use o ReCAPTCHA."
 }

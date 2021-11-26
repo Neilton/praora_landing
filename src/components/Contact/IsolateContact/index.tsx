@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useTranslation } from 'react-i18next';
 import Rafiki from "../../../assets/img/rafiki.png";
 import Slack from "../../../assets/img/icon/slack.png";
@@ -19,7 +19,8 @@ type FormData = {
 function Contact() {
   const [t] = useTranslation();
   const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
-  const ReCAPTCHAKey = "6LdSrFwdAAAAALH3mCSr22lqrQnwFQA3g1aR6OVC"
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+  const ReCAPTCHAKey = "6LdSrFwdAAAAALH3mCSr22lqrQnwFQA3g1aR6OVC";
   const onSubmit = handleSubmit(async data => {
     const api_key = "UEESivQTrbbYQFwnwBCjbVvjJAWDqYxpCcqt"
     const url = "https://api.rd.services/platform/conversions?api_key=" + api_key;
@@ -44,10 +45,21 @@ function Contact() {
     }
   });
 
-
-  function onChange(value: any) {
-    onSubmit()
+  const onSubmitWithReCAPTCHA = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    try {
+      if (recaptchaRef.current !== null) {
+        console.log("To dentro")
+        const _result = await recaptchaRef.current.executeAsync();
+        console.log(_result);
+        onSubmit();
+      }
+    } catch(err){
+      console.log(err, "Error on Captcha");
+      toast.error(t("ReCAPTCHA"));
+    }
   }
+
 
   return <React.Fragment>
     <section className={styles.contactWrap} id="contact">
@@ -73,8 +85,8 @@ function Contact() {
                 <hr className={styles.formHr} />
               </div>
               <div className="d-flex justify-content-center">
-                <ReCAPTCHA sitekey={ReCAPTCHAKey} onChange={onChange}>
-                  <form onSubmit={onSubmit} className="mb-5">
+                <ReCAPTCHA ref={recaptchaRef} sitekey={ReCAPTCHAKey}>
+                  <form onSubmit={onSubmitWithReCAPTCHA} className="mb-5">
                     <div className={styles.formContent}>
                       <div className={styles.formGroup}>
                         <label htmlFor="name">{t('YourName')}</label>
