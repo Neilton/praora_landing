@@ -56,5 +56,7 @@
   "PublicChannels": "Canais Públicos",
   "FirstNameRequired": "Por favor, digite seu nome completo.",
   "EmailRequired": "Digite seu e-mail.",
-  "MessageWrong": "Tem alguma coisa errada nesse campo."
+  "MessageWrong": "Tem alguma coisa errada nesse campo.",
+  "ThanksForYourInteresting": "Uau! Obrigado pelo seu interesse.",
+  "HumSomethingGoesWrong": "Hum... Alguma coisa deu errado no formulário."
 }

@@ -56,5 +56,7 @@
     "PublicChannels": "Public Channels",
     "FirstNameRequired": "First name is required",
     "EmailRequired": "Email is required",
-    "MessageWrong": "Something is wrong on this area."
+    "MessageWrong": "Something is wrong on this area.",
+    "ThanksForYourInteresting": "Wow! Thanks for your interesting",
+    "HumSomethingGoesWrong": "Hum... Something goes wrong with your."
   }

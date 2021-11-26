@@ -6,7 +6,9 @@ import styles from "./styles.module.scss";
 import Button from "../../Core/Button";
 import { useForm } from "react-hook-form";
 import ReCAPTCHA from "react-google-recaptcha";
+import { ToastContainer, toast } from 'react-toastify';
 import axios from "axios";
+import 'react-toastify/dist/ReactToastify.css';
 
 type FormData = {
   fullName: string;
@@ -25,7 +27,7 @@ function Contact() {
     const request = {
       event_type: "CONVERSION",
       event_family: "CDP",
-      "payload": { 
+      "payload": {
         conversion_identifier: "Landing Page Form",
         name: data.fullName,
         email: data.email,
@@ -33,20 +35,23 @@ function Contact() {
       }
     }
 
-    axios.post(url, request)
-        .then(response => console.log(response))
-        .catch(error => {
-          console.error('There was an error!', error);
-      });
+    try {
+      const resp = await axios.post(url, request)
+      const {status} = await resp;
+      status === 200 ? toast.success(t("ThanksForYourInteresting")) : toast.error(t("HumSomethingGoesWrong"))
+    } catch (err) {
+      toast.error(t("HumSomethingGoesWrong"), { autoClose: 5000 })
+    }
   });
 
 
   function onChange(value: any) {
-    console.log("Captcha value:", value);
+    onSubmit()
   }
 
   return <React.Fragment>
     <section className={styles.contactWrap} id="contact">
+      <ToastContainer />
       <div className="container">
         <div className="row">
           <div className="col-lg-7">
@@ -68,29 +73,29 @@ function Contact() {
                 <hr className={styles.formHr} />
               </div>
               <div className="d-flex justify-content-center">
-              <ReCAPTCHA sitekey={ReCAPTCHAKey} onChange={onChange}>
-              <form onSubmit={onSubmit} className="mb-5">
-                <div className={styles.formContent}>
-                  <div className={styles.formGroup}>
-                    <label htmlFor="name">{t('YourName')}</label>
-                    <input type="text" className="form-control" id="name" placeholder={t('EgJohnnyBravo')} {...register("fullName", { required: true })} />
-                    <p className="text-info">{errors.fullName?.type === 'required' && t('FirstNameRequired')}</p>
-                  </div>
-                  <div className={styles.formGroup}>
-                    <label htmlFor="InputEmail1">{t('YourEmail')}</label>
-                    <input type="email" className="form-control" id="InputEmail1" placeholder={t('EmailSample')} {...register("email", { required: true })} />
-                    <p className="text-info">{errors.email && t('EmailRequired')}</p>
-                  </div>
-                  <div className={styles.formGroup}>
-                    <label htmlFor="textarea">{t('YourMessage')}</label>
-                    <textarea className="form-control" id="textarea" placeholder={t('Message')} defaultValue={""} {...register("message")} />
-                    <p className="text-info">{errors.message && t('MessageWrong')}</p>
-                  </div>
-                  <Button className={styles.submBtn}>{t('SendMessage')}</Button>
-                </div>
-              </form>
-              </ReCAPTCHA>
-            </div>
+                <ReCAPTCHA sitekey={ReCAPTCHAKey} onChange={onChange}>
+                  <form onSubmit={onSubmit} className="mb-5">
+                    <div className={styles.formContent}>
+                      <div className={styles.formGroup}>
+                        <label htmlFor="name">{t('YourName')}</label>
+                        <input type="text" className="form-control" id="name" placeholder={t('EgJohnnyBravo')} {...register("fullName", { required: true })} />
+                        <p className="text-info">{errors.fullName?.type === 'required' && t('FirstNameRequired')}</p>
+                      </div>
+                      <div className={styles.formGroup}>
+                        <label htmlFor="InputEmail1">{t('YourEmail')}</label>
+                        <input type="email" className="form-control" id="InputEmail1" placeholder={t('EmailSample')} {...register("email", { required: true })} />
+                        <p className="text-info">{errors.email && t('EmailRequired')}</p>
+                      </div>
+                      <div className={styles.formGroup}>
+                        <label htmlFor="textarea">{t('YourMessage')}</label>
+                        <textarea className="form-control" id="textarea" placeholder={t('Message')} defaultValue={""} {...register("message")} />
+                        <p className="text-info">{errors.message && t('MessageWrong')}</p>
+                      </div>
+                      <Button className={styles.submBtn}>{t('SendMessage')}</Button>
+                    </div>
+                  </form>
+                </ReCAPTCHA>
+              </div>
             </div>
           </div>
         </div>
