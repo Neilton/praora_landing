@@ -51,13 +51,18 @@ function Contact() {
       if (recaptchaRef.current !== null) {
         const _result = await recaptchaRef.current.executeAsync();
         console.log(_result);
-        onSubmit();
       }
     } catch (err) {
       toast.error(t("ReCAPTCHA"));
     }
   }
 
+  function redoCaptcha() {
+    if (recaptchaRef.current !== null) {
+      recaptchaRef.current.reset();
+      recaptchaRef.current.execute();
+    }
+  }
 
   return <React.Fragment>
     <section className={styles.contactWrap} id="contact">
@@ -102,7 +107,11 @@ function Contact() {
                       </div>
                       <Button className={styles.submBtn}>{t('SendMessage')}</Button>
                     </div>
-                    <div className="mt-4"><ReCAPTCHA ref={recaptchaRef} sitekey={ReCAPTCHAKey} size="invisible" badge="inline" onErrored={() => toast.error(t("HumSomethingGoesWrong"), { autoClose: 5000 })} /></div>
+                    <div className="mt-4">
+                      <ReCAPTCHA ref={recaptchaRef} sitekey={ReCAPTCHAKey} size="invisible" 
+                      badge="inline" onExpired={redoCaptcha} onErrored={() => toast.error(t("HumSomethingGoesWrong"), { autoClose: 5000 })} 
+                      onChange={() => onSubmit}
+                      /></div>
                 </form>
               </div>
             </div>
