@@ -20,7 +20,7 @@ function Contact() {
   const [t] = useTranslation();
   const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
   const recaptchaRef = useRef<ReCAPTCHA>(null);
-  const ReCAPTCHAKey = "6LdSrFwdAAAAALH3mCSr22lqrQnwFQA3g1aR6OVC";
+  const ReCAPTCHAKey = "6LcMyl4dAAAAANJB0l6a5GJcLVxW7AO1YH3eXfat";
   const onSubmit = handleSubmit(async data => {
     const api_key = "UEESivQTrbbYQFwnwBCjbVvjJAWDqYxpCcqt"
     const url = "https://api.rd.services/platform/conversions?api_key=" + api_key;
@@ -38,7 +38,7 @@ function Contact() {
 
     try {
       const resp = await axios.post(url, request)
-      const {status} = await resp;
+      const { status } = await resp;
       status === 200 ? toast.success(t("ThanksForYourInteresting")) : toast.error(t("HumSomethingGoesWrong"))
     } catch (err) {
       toast.error(t("HumSomethingGoesWrong"), { autoClose: 5000 })
@@ -49,13 +49,11 @@ function Contact() {
     e.preventDefault();
     try {
       if (recaptchaRef.current !== null) {
-        console.log("To dentro")
         const _result = await recaptchaRef.current.executeAsync();
         console.log(_result);
         onSubmit();
       }
-    } catch(err){
-      console.log(err, "Error on Captcha");
+    } catch (err) {
       toast.error(t("ReCAPTCHA"));
     }
   }
@@ -85,8 +83,7 @@ function Contact() {
                 <hr className={styles.formHr} />
               </div>
               <div className="d-flex justify-content-center">
-                <ReCAPTCHA ref={recaptchaRef} sitekey={ReCAPTCHAKey}>
-                  <form onSubmit={onSubmitWithReCAPTCHA} className="mb-5">
+                <form onSubmit={onSubmitWithReCAPTCHA}>
                     <div className={styles.formContent}>
                       <div className={styles.formGroup}>
                         <label htmlFor="name">{t('YourName')}</label>
@@ -105,8 +102,8 @@ function Contact() {
                       </div>
                       <Button className={styles.submBtn}>{t('SendMessage')}</Button>
                     </div>
-                  </form>
-                </ReCAPTCHA>
+                    <div className="mt-4"><ReCAPTCHA ref={recaptchaRef} sitekey={ReCAPTCHAKey} size="invisible" badge="inline" onErrored={() => toast.error(t("HumSomethingGoesWrong"), { autoClose: 5000 })} /></div>
+                </form>
               </div>
             </div>
           </div>
