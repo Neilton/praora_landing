@@ -6,7 +6,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 function Button({children}: ButtonProps) {
     return(
-        <button className={styles.button}>
+        <button className={styles.button} type="submit">
             {children}
         </button>
     )

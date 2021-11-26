@@ -53,5 +53,8 @@
     "EmailSample": "email@example.com",
     "Message": "Message",
     "WhatIsPraora": "What's?",
-    "PublicChannels": "Public Channels"
+    "PublicChannels": "Public Channels",
+    "FirstNameRequired": "First name is required",
+    "EmailRequired": "Email is required",
+    "MessageWrong": "Something is wrong on this area."
   }
