@@ -41,6 +41,13 @@
   padding: 0rem 1.32rem;
 }
 
+.navLinkMobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
 .navWrp .navLink .navItem {
   font-weight: 500;
   font-size: 16px;

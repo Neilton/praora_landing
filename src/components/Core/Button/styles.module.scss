@@ -11,3 +11,11 @@
     width: 250px;
     height: 48px;
 }
+
+/* Mobile  */
+@media(max-width: 568px) {
+    .button {
+        width: 150px;
+        height: 48px;
+    }
+}

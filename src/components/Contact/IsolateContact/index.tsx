@@ -105,7 +105,7 @@ function Contact() {
                         <textarea className="form-control" id="textarea" placeholder={t('Message')} defaultValue={""} {...register("message")} />
                         <p className="text-info">{errors.message && t('MessageWrong')}</p>
                       </div>
-                      <Button className={styles.submBtn}>{t('SendMessage')}</Button>
+                      <Button>{t('SendMessage')}</Button>
                     </div>
                     <div className="mt-4">
                       <ReCAPTCHA ref={recaptchaRef} sitekey={ReCAPTCHAKey} size="invisible" 

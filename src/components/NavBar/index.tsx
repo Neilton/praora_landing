@@ -35,7 +35,7 @@ function NavBar() {
 
           <Navbar.Collapse id="responsive-navbar-nav">
             <div className={isOpen ? `${styles.navWrp} ${styles.activated} ` : `${styles.navWrp} ${styles.navWrap}`}>
-             <Nav.Item>
+              <Nav.Item>
                 <Nav.Link className={styles.navItem}>
                   <RLink
                     to="WhatIsPraora"
@@ -89,7 +89,17 @@ function NavBar() {
                   </RLink>
                 </Nav.Link>
               </Nav.Item>
-            {/* </div> */}
+              {isMobile && <Nav.Item>
+                <a
+                  href={"https://docs.praora.com/whitepaper"}
+                  aria-label="Whitepaper"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={styles.navLinkMobile}
+                >
+                  <Button>{t("whitepaper")}</Button>
+                </a>
+              </Nav.Item>}
             </div>
           </Navbar.Collapse>
           {!isMobile && (
@@ -102,7 +112,7 @@ function NavBar() {
 
             >
               {" "}
-              <Button className={styles.headerBtn}>{t("whitepaper")}</Button>
+              <Button>{t("whitepaper")}</Button>
             </a>
           )}
           <div className={styles.toggleBar} onClick={handleClick}>
