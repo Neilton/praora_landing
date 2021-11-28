@@ -81,7 +81,7 @@ function Contact() {
           <div className="col-lg-5">
             <div className={styles.contactForm}>
               <h6>{t('SocialMedias')}</h6>
-              <ul className={styles.socialWrp}>
+              <ul className={styles.socialWrap}>
                 <li><a href="https://praora.slack.com/messages/general/" target="__blank" rel="noopen"><img src={Slack} alt="Slack" /></a></li>
                 <li><a href="https://www.instagram.com/_praora/" target="__blank" rel="noopen"><img src={Instagram} alt="Instagram" /></a></li>
                 <li><a href="https://www.linkedin.com/company/praora" target="__blank" rel="noopen"><img src={Linkedin} alt="Linkedin" /></a></li>
