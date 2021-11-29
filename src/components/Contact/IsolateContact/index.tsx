@@ -23,7 +23,7 @@ function Contact() {
   const ReCAPTCHAKey = "6LcMyl4dAAAAANJB0l6a5GJcLVxW7AO1YH3eXfat";
   const onSubmit = handleSubmit(async data => {
     const api_key = "UEESivQTrbbYQFwnwBCjbVvjJAWDqYxpCcqt"
-    const url = "https://api.rd.services/platform/conversions?api_key=" + api_key;
+    const url = `https://api.rd.services/platform/conversions?api_key="${api_key}"`;
 
     const request = {
       event_type: "CONVERSION",

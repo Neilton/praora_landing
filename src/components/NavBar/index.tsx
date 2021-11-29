@@ -15,7 +15,10 @@ function NavBar() {
   const [t] = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const handleClick = () => setIsOpen(!isOpen);
-
+  const close = () => {
+    console.log(isOpen);
+    setIsOpen(false);
+  };
   return (
     <Navbar
       fixed="top"
@@ -34,62 +37,75 @@ function NavBar() {
           </Navbar.Brand>
 
           <Navbar.Collapse id="responsive-navbar-nav">
-            <div className={isOpen ? `${styles.navWrp} ${styles.activated} ` : `${styles.navWrp} ${styles.navWrap}`}>
-             <Nav.Item>
-                <Nav.Link className={styles.navItem}>
-                  <RLink
-                    to="WhatIsPraora"
-                    spy={true}
-                    smooth={true}
-                    offset={50}
-                    duration={600}
-                    delay={100}
-                    className={styles.navLink}
-                  >
+            <div
+              className={
+                isOpen
+                  ? `${styles.navWrp} ${styles.activated} `
+                  : `${styles.navWrp} ${styles.navWrap}`
+              }
+            >
+              <RLink
+                to="WhatIsPraora"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={600}
+                delay={100}
+                className={styles.navLink}
+                onClick={close}
+              >
+                <Nav.Item>
+                  <Nav.Link className={styles.navItem}>
                     {t("WhatIsPraora")}
-                  </RLink>
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Link className={styles.navItem}>
-                <RLink
-                  to="resources"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={600}
-                  delay={100}
-                  className={styles.navLink}
-                >
-                  {t("resources")}
-                </RLink>
-              </Nav.Link>
-              <Nav.Item>
-                <Nav.Link className={styles.navItem}>
-                  <a
-                    href="#!"
-                    data-scroll="howtobeg"
-                    className={styles.navLink}
-                  >
-                    {t("roadmap")}
-                  </a>
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link className={styles.navItem}>
-                  <RLink
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    offset={50}
-                    duration={600}
-                    delay={100}
-                    className={styles.navLink}
-                  >
-                    {t("contact")}
-                  </RLink>
-                </Nav.Link>
-              </Nav.Item>
-            {/* </div> */}
+                  </Nav.Link>
+                </Nav.Item>
+              </RLink>
+              <RLink
+                to="resources"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={600}
+                delay={100}
+                className={styles.navLink}
+                onClick={close}
+              >
+                <Nav.Item onClick={close}>
+                  <Nav.Link className={styles.navItem}>
+                    {t("resources")}
+                  </Nav.Link>
+                </Nav.Item>
+              </RLink>
+              <RLink
+                to="roadmap"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={600}
+                delay={100}
+                className={styles.navLink}
+                onClick={close}
+              >
+                <Nav.Item>
+                  <Nav.Link className={styles.navItem}>{t("roadmap")}</Nav.Link>
+                </Nav.Item>
+              </RLink>
+
+              <RLink
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={600}
+                delay={100}
+                className={styles.navLink}
+                onClick={close}
+              >
+                <Nav.Item>
+                  <Nav.Link className={styles.navItem}>{t("contact")}</Nav.Link>
+                </Nav.Item>
+              </RLink>
+              {/* </div> */}
             </div>
           </Navbar.Collapse>
           {!isMobile && (
@@ -99,7 +115,6 @@ function NavBar() {
               target="_blank"
               rel="noreferrer"
               className={styles.headerBtnLink}
-
             >
               {" "}
               <Button className={styles.headerBtn}>{t("whitepaper")}</Button>
