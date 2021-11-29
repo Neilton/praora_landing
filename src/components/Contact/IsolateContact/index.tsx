@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import { useTranslation } from 'react-i18next';
 import Rafiki from "../../../assets/img/rafiki.png";
 import Slack from "../../../assets/img/icon/slack.png";
+import Instagram from "../../../assets/img/icon/instagram.png";
+import Linkedin from "../../../assets/img/icon/linkedin.png";
 import styles from "./styles.module.scss";
 import Button from "../../Core/Button";
 import { useForm } from "react-hook-form";
@@ -79,8 +81,10 @@ function Contact() {
           <div className="col-lg-5">
             <div className={styles.contactForm}>
               <h6>{t('SocialMedias')}</h6>
-              <ul className={styles.socialWrp}>
+              <ul className={styles.socialWrap}>
                 <li><a href="https://praora.slack.com/messages/general/" target="__blank" rel="noopen"><img src={Slack} alt="Slack" /></a></li>
+                <li><a href="https://www.instagram.com/_praora/" target="__blank" rel="noopen"><img src={Instagram} alt="Instagram" /></a></li>
+                <li><a href="https://www.linkedin.com/company/praora" target="__blank" rel="noopen"><img src={Linkedin} alt="Linkedin" /></a></li>
               </ul>
               <div className={`${styles.formHeading} position-relative`}>
                 <hr className={styles.formHr} />
@@ -105,7 +109,7 @@ function Contact() {
                         <textarea className="form-control" id="textarea" placeholder={t('Message')} defaultValue={""} {...register("message")} />
                         <p className="text-info">{errors.message && t('MessageWrong')}</p>
                       </div>
-                      <Button className={styles.submBtn}>{t('SendMessage')}</Button>
+                      <Button>{t('SendMessage')}</Button>
                     </div>
                     <div className="mt-4">
                       <ReCAPTCHA ref={recaptchaRef} sitekey={ReCAPTCHAKey} size="invisible" 

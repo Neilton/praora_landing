@@ -1,5 +1,5 @@
 import About from "../components/About";
-import HomeContact from "../components/Contact/IsolateContact";
+import IsolateContact from "../components/Contact/IsolateContact";
 import Hero from "../components/Hero";
 import Manage from "../components/Manage";
 import Market from "../components/Market";
@@ -15,7 +15,7 @@ function Home() {
       <Market />
       <Manage />
       <More />
-      <HomeContact />
+      <IsolateContact />
     </>
   );
 }

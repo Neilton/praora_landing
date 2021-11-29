@@ -45,14 +45,17 @@
     margin-bottom: 22px;
 }
 
-.socialWrp {
+.socialWrap {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 5px;
+    img {
+        max-width: 35px
+    };
 }
 
-.socialWrp li:not(:last-child) {
+.socialWrap li:not(:last-child) {
     margin-right: 20px;
 }
 

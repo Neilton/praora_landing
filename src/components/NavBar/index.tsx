@@ -117,7 +117,7 @@ function NavBar() {
               className={styles.headerBtnLink}
             >
               {" "}
-              <Button className={styles.headerBtn}>{t("whitepaper")}</Button>
+              <Button>{t("whitepaper")}</Button>
             </a>
           )}
           <div className={styles.toggleBar} onClick={handleClick}>

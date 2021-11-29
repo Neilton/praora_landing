@@ -17,7 +17,7 @@ function Footer() {
                 <div className={styles.logoSection}>
               </div>
               <div className={styles.networkSection}>
-                <p className="text-center">Praora Network</p>
+                <p className="text-center">IORA Network</p>
               </div>
             </div>
           </Col>
