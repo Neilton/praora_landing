@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect, MutableRefObject } from "react";
 import styles from "./styles.module.scss";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -14,11 +14,15 @@ import { isMobile } from "react-device-detect";
 function NavBar() {
   const [t] = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
-  const handleClick = () => setIsOpen(!isOpen);
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
   const close = () => {
-    console.log(isOpen);
     setIsOpen(false);
   };
+  const wrapperRef = useRef(null);
+  // @ts-ignore
+  useOutsideAlerter(wrapperRef, isOpen, close);
   return (
     <Navbar
       fixed="top"
@@ -26,6 +30,7 @@ function NavBar() {
       className={`${styles.navbar} ${styles.navbarScr} `}
       data-spy="scroll"
       data-target=".nav-wrp"
+      ref={wrapperRef}
     >
       <Container fluid="xl">
         <div className={styles.navbarContent}>
@@ -127,6 +132,26 @@ function NavBar() {
       </Container>
     </Navbar>
   );
+}
+
+function useOutsideAlerter(
+  ref: MutableRefObject<null>,
+  isOpen: boolean,
+  close: { (): void; (): void }
+) {
+  useEffect(() => {
+    // @ts-ignore
+    function handleClickOutside(event) {
+      // @ts-ignore
+      if (ref.current && isOpen && !ref.current.contains(event.target)) {
+        close();
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [close, isOpen, ref]);
 }
 
 export default NavBar;
