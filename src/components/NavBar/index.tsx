@@ -10,7 +10,7 @@ import Button from "../Core/Button";
 import { useTranslation } from "react-i18next";
 import { Link as RLink } from "react-scroll";
 import { isMobile } from "react-device-detect";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const [t] = useTranslation();
@@ -27,7 +27,6 @@ function NavBar() {
   return (
     <Navbar
       fixed="top"
-      expand
       className={`${styles.navbar} ${styles.navbarScr} `}
       data-spy="scroll"
       data-target=".nav-wrp"
@@ -41,7 +40,6 @@ function NavBar() {
               <span>praora</span>
             </div>
           </Navbar.Brand>
-
           <Navbar.Collapse id="responsive-navbar-nav">
             <div
               className={
@@ -61,9 +59,7 @@ function NavBar() {
                 onClick={close}
               >
                 <Nav.Item>
-                  <li className={styles.navItem}>
-                    {t("WhatIsPraora")}
-                  </li>
+                  <li className={styles.navItem}>{t("WhatIsPraora")}</li>
                 </Nav.Item>
               </RLink>
               <RLink
@@ -77,12 +73,9 @@ function NavBar() {
                 onClick={close}
               >
                 <Nav.Item onClick={close}>
-                  <li className={styles.navItem}>
-                    {t("resources")}
-                  </li>
+                  <li className={styles.navItem}>{t("resources")}</li>
                 </Nav.Item>
               </RLink>
-            
               <RLink
                 to="roadmap"
                 spy={true}
@@ -97,7 +90,6 @@ function NavBar() {
                   <li className={styles.navItem}>{t("roadmap")}</li>
                 </Nav.Item>
               </RLink>
-
               <RLink
                 to="contact"
                 spy={true}
