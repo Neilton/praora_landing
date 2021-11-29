@@ -30,6 +30,8 @@ function Contact() {
   // @ts-ignore
   async function onSubmit(data, e) {
     e.preventDefault();
+    e.target.reset();
+
     onSubmitWithReCAPTCHA(e);
 
     const api_key = "UEESivQTrbbYQFwnwBCjbVvjJAWDqYxpCcqt";
