@@ -49,20 +49,6 @@ function NavBar() {
               }
             >
               <RLink
-                to="WhatIsPraora"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={600}
-                delay={100}
-                className={styles.navLink}
-                onClick={close}
-              >
-                <Nav.Item>
-                  <li className={styles.navItem}>{t("WhatIsPraora")}</li>
-                </Nav.Item>
-              </RLink>
-              <RLink
                 to="resources"
                 spy={true}
                 smooth={true}
@@ -91,6 +77,20 @@ function NavBar() {
                 </Nav.Item>
               </RLink>
               <RLink
+                to="team"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={600}
+                delay={100}
+                className={styles.navLink}
+                onClick={close}
+              >
+                <Nav.Item>
+                  <li className={styles.navItem}>{t("team")}</li>
+                </Nav.Item>
+              </RLink>
+              <RLink
                 to="contact"
                 spy={true}
                 smooth={true}
@@ -104,7 +104,17 @@ function NavBar() {
                   <li className={styles.navItem}>{t("contact")}</li>
                 </Nav.Item>
               </RLink>
-              {/* </div> */}
+              {isMobile && (<Link
+                to={"https://docs.praora.com/whitepaper"}
+                aria-label="Whitepaper"
+                target="_blank"
+                rel="noreferrer"
+                className={styles.headerBtnLinkNavBar}
+              >
+                {" "}
+                <Button>{t("whitepaper")}</Button>
+              </Link>
+              )}
             </div>
           </Navbar.Collapse>
           {!isMobile && (
@@ -116,7 +126,7 @@ function NavBar() {
               className={styles.headerBtnLink}
             >
               {" "}
-              <Button>whitepaper</Button>
+              <Button>{t("whitepaper")}</Button>
             </Link>
           )}
           <div className={styles.toggleBar} onClick={handleClick}>
