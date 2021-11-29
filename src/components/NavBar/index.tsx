@@ -10,6 +10,7 @@ import Button from "../Core/Button";
 import { useTranslation } from "react-i18next";
 import { Link as RLink } from "react-scroll";
 import { isMobile } from "react-device-detect";
+import { Link } from "react-router-dom"
 
 function NavBar() {
   const [t] = useTranslation();
@@ -60,9 +61,9 @@ function NavBar() {
                 onClick={close}
               >
                 <Nav.Item>
-                  <Nav.Link className={styles.navItem}>
+                  <li className={styles.navItem}>
                     {t("WhatIsPraora")}
-                  </Nav.Link>
+                  </li>
                 </Nav.Item>
               </RLink>
               <RLink
@@ -76,11 +77,12 @@ function NavBar() {
                 onClick={close}
               >
                 <Nav.Item onClick={close}>
-                  <Nav.Link className={styles.navItem}>
+                  <li className={styles.navItem}>
                     {t("resources")}
-                  </Nav.Link>
+                  </li>
                 </Nav.Item>
               </RLink>
+            
               <RLink
                 to="roadmap"
                 spy={true}
@@ -92,7 +94,7 @@ function NavBar() {
                 onClick={close}
               >
                 <Nav.Item>
-                  <Nav.Link className={styles.navItem}>{t("roadmap")}</Nav.Link>
+                  <li className={styles.navItem}>{t("roadmap")}</li>
                 </Nav.Item>
               </RLink>
 
@@ -107,23 +109,23 @@ function NavBar() {
                 onClick={close}
               >
                 <Nav.Item>
-                  <Nav.Link className={styles.navItem}>{t("contact")}</Nav.Link>
+                  <li className={styles.navItem}>{t("contact")}</li>
                 </Nav.Item>
               </RLink>
               {/* </div> */}
             </div>
           </Navbar.Collapse>
           {!isMobile && (
-            <a
-              href={"https://docs.praora.com/whitepaper"}
+            <Link
+              to={"https://docs.praora.com/whitepaper"}
               aria-label="Whitepaper"
               target="_blank"
               rel="noreferrer"
               className={styles.headerBtnLink}
             >
               {" "}
-              <Button>{t("whitepaper")}</Button>
-            </a>
+              <Button>whitepaper</Button>
+            </Link>
           )}
           <div className={styles.toggleBar} onClick={handleClick}>
             <Image src={bar} fluid alt="" />
