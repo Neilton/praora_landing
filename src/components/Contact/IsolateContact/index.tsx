@@ -48,7 +48,6 @@ function Contact() {
 
     const resp = await axios.post(url, request);
     const { status } = resp;
-    console.log("SOU A RESP", resp.status);
     status === 200
       ? toast.success(t("ThanksForYourInteresting"))
       : toast.error(t("HumSomethingGoesWrong"));
@@ -57,9 +56,7 @@ function Contact() {
   const onSubmitWithReCAPTCHA = async (e: React.FormEvent<HTMLFormElement>) => {
     try {
       if (recaptchaRef.current !== null) {
-        console.log("REACPATHAA", recaptchaRef.current);
         const _result = await recaptchaRef.current.executeAsync();
-        console.log(_result);
       }
     } catch (err) {
       toast.error(t("ReCAPTCHA"));
