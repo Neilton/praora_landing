@@ -12,7 +12,18 @@ const tagManagerArgs = {
 
 TagManager.initialize(tagManagerArgs)
 
+declare global {
+  interface Window {
+    dataLayer:any;
+  }
+}
+
 function App() {
+  let FB = window.dataLayer;
+  FB.push({
+    event: 'pageview'
+  });
+
   return (
     <BrowserRouter>
       <Routes>
