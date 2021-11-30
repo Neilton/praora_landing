@@ -62,8 +62,8 @@ function Contact() {
   const onSubmitWithReCAPTCHA = async (e: React.FormEvent<HTMLFormElement>) => {
     try {
       if (recaptchaRef.current !== null) {
-        await recaptchaRef.current.executeAsync();
-        return true
+        const result = await recaptchaRef.current.executeAsync();
+        return result
 
       }
     } catch (err) {
