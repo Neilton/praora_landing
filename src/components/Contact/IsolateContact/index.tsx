@@ -31,7 +31,7 @@ function Contact() {
     e.preventDefault();
     e.target.reset();
 
-    let captchaResult = onSubmitWithReCAPTCHA(e);
+    let captchaResult = await onSubmitWithReCAPTCHA(e);
     console.log(captchaResult)
     const api_key = "UEESivQTrbbYQFwnwBCjbVvjJAWDqYxpCcqt";
     const url = `https://api.rd.services/platform/conversions?api_key=${api_key}`;
@@ -46,7 +46,8 @@ function Contact() {
         cf_message: data.message,
       },
     };
-    if(!captchaResult) {
+
+    if(captchaResult) {
       
       const resp = await axios.post(url, request);
       const { status } = resp;
@@ -63,7 +64,8 @@ function Contact() {
     try {
       if (recaptchaRef.current !== null) {
         const result = await recaptchaRef.current.executeAsync();
-        return result
+        console.log(result);
+        return result;
 
       }
     } catch (err) {
