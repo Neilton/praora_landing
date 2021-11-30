@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Rafiki from "../../../assets/img/rafiki.png";
 import Slack from "../../../assets/img/icon/slack.png";
@@ -17,7 +17,6 @@ type FormData = {
   email: string;
   message: string;
 };
-
 function Contact() {
   const [t] = useTranslation();
   const {
@@ -50,9 +49,12 @@ function Contact() {
 
     const resp = await axios.post(url, request);
     const { status } = resp;
-    status === 200
-      ? toast.success(t("ThanksForYourInteresting"))
-      : toast.error(t("HumSomethingGoesWrong"));
+    if (status === 200) {
+      toast.success(t("ThanksForYourInteresting"));
+      setHasSubmited(true);
+    } else {
+      toast.error(t("HumSomethingGoesWrong"));
+    }
   }
 
   const onSubmitWithReCAPTCHA = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -72,6 +74,7 @@ function Contact() {
     }
   }
 
+  const [hasSubmited, setHasSubmited] = useState(false);
   return (
     <React.Fragment>
       <section className={styles.contactWrap} id="contact">
@@ -124,7 +127,10 @@ function Contact() {
                 </div>
                 <div className="d-flex justify-content-center">
                   {/* @ts-ignore */}
-                  <form onSubmit={handleSubmit(onSubmit)}>
+                  <form
+                    className={hasSubmited ? styles.disabled : ""}
+                    onSubmit={handleSubmit(onSubmit)}
+                  >
                     <div className={styles.formContent}>
                       <div className={styles.formGroup}>
                         <label htmlFor="name">{t("YourName")}</label>
@@ -166,13 +172,16 @@ function Contact() {
                           {errors.message && t("MessageWrong")}
                         </p>
                       </div>
-                      <Button>{t("SendMessage")}</Button>
+                      <Button>
+                        {hasSubmited
+                          ? t("ButtonContactFormDisabled")
+                          : t("SendMessage")}
+                      </Button>
                     </div>
                     <div className="mt-4">
                       <ReCAPTCHA
                         ref={recaptchaRef}
                         sitekey={ReCAPTCHAKey}
-                        size="invisible"
                         badge="inline"
                         onExpired={redoCaptcha}
                         onErrored={() =>
