@@ -25,7 +25,7 @@ function Contact() {
     formState: { errors },
   } = useForm<FormData>();
   const recaptchaRef = useRef<ReCAPTCHA>(null);
-  const ReCAPTCHAKey = "6LduFmodAAAAAJSbeDQd6FVWxh7b4_Tc9HfoFl4q";
+  const ReCAPTCHAKey = "6LcMyl4dAAAAANJB0l6a5GJcLVxW7AO1YH3eXfat";
   // @ts-ignore
   async function onSubmit(data, e) {
     e.preventDefault();
@@ -33,7 +33,7 @@ function Contact() {
 
     let captchaResult = onSubmitWithReCAPTCHA(e);
 
-    const api_key = "6LduFmodAAAAAH0azzQLGyaj0oE96QYL0GgP6pRg";
+    const api_key = "UEESivQTrbbYQFwnwBCjbVvjJAWDqYxpCcqt";
     const url = `https://api.rd.services/platform/conversions?api_key=${api_key}`;
 
     const request = {
