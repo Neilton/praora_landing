@@ -4,6 +4,7 @@ import "./index.scss"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "../src/components/Layout";
 import Home from "../src/pages/Home";
+import Financial from "../src/pages/Financial";
 import TagManager from 'react-gtm-module'
 
 const tagManagerArgs = {
@@ -29,6 +30,7 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/openfinance" element={<Financial />} />
         </Route>
       </Routes>
     </BrowserRouter>
