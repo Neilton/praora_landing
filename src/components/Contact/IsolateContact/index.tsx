@@ -25,15 +25,15 @@ function Contact() {
     formState: { errors },
   } = useForm<FormData>();
   const recaptchaRef = useRef<ReCAPTCHA>(null);
-  const ReCAPTCHAKey = "6LcMyl4dAAAAANJB0l6a5GJcLVxW7AO1YH3eXfat";
+  const ReCAPTCHAKey = "6LduFmodAAAAAJSbeDQd6FVWxh7b4_Tc9HfoFl4q";
   // @ts-ignore
   async function onSubmit(data, e) {
     e.preventDefault();
     e.target.reset();
 
-    onSubmitWithReCAPTCHA(e);
+    let captchaResult = onSubmitWithReCAPTCHA(e);
 
-    const api_key = "UEESivQTrbbYQFwnwBCjbVvjJAWDqYxpCcqt";
+    const api_key = "6LduFmodAAAAAH0azzQLGyaj0oE96QYL0GgP6pRg";
     const url = `https://api.rd.services/platform/conversions?api_key=${api_key}`;
 
     const request = {
@@ -46,25 +46,28 @@ function Contact() {
         cf_message: data.message,
       },
     };
-
-    const resp = await axios.post(url, request);
-    const { status } = resp;
-    if (status === 200) {
-      toast.success(t("ThanksForYourInteresting"));
-      setHasSubmited(true);
-    } else {
-      toast.error(t("HumSomethingGoesWrong"));
+    if(!captchaResult) {
+      
+      const resp = await axios.post(url, request);
+      const { status } = resp;
+      if (status === 200) {
+        toast.success(t("ThanksForYourInteresting"));
+        setHasSubmited(true);
+      } else {
+        toast.error(t("HumSomethingGoesWrong"));
+      }
     }
   }
 
   const onSubmitWithReCAPTCHA = async (e: React.FormEvent<HTMLFormElement>) => {
     try {
       if (recaptchaRef.current !== null) {
-         await recaptchaRef.current.executeAsync();
+        await recaptchaRef.current.executeAsync();
       }
     } catch (err) {
       toast.error(t("ReCAPTCHA"));
-    }
+      return false
+    } 
   };
 
   function redoCaptcha() {
