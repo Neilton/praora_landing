@@ -32,7 +32,7 @@ function Contact() {
     e.target.reset();
 
     let captchaResult = onSubmitWithReCAPTCHA(e);
-
+    console.log(captchaResult)
     const api_key = "UEESivQTrbbYQFwnwBCjbVvjJAWDqYxpCcqt";
     const url = `https://api.rd.services/platform/conversions?api_key=${api_key}`;
 
@@ -63,6 +63,8 @@ function Contact() {
     try {
       if (recaptchaRef.current !== null) {
         await recaptchaRef.current.executeAsync();
+        return true
+
       }
     } catch (err) {
       toast.error(t("ReCAPTCHA"));
