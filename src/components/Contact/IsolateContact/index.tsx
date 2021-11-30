@@ -60,7 +60,7 @@ function Contact() {
   const onSubmitWithReCAPTCHA = async (e: React.FormEvent<HTMLFormElement>) => {
     try {
       if (recaptchaRef.current !== null) {
-        const _result = await recaptchaRef.current.executeAsync();
+         await recaptchaRef.current.executeAsync();
       }
     } catch (err) {
       toast.error(t("ReCAPTCHA"));
