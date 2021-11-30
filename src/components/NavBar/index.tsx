@@ -10,7 +10,6 @@ import Button from "../Core/Button";
 import { useTranslation } from "react-i18next";
 import { Link as RLink } from "react-scroll";
 import { isMobile } from "react-device-detect";
-import { Link } from "react-router-dom";
 
 function NavBar() {
   const [t] = useTranslation();
@@ -104,30 +103,32 @@ function NavBar() {
                   <li className={styles.navItem}>{t("contact")}</li>
                 </Nav.Item>
               </RLink>
-              {isMobile && (<Link
-                to={"https://docs.praora.com/whitepaper"}
+              {isMobile && (<a
+                href={"https://docs.praora.com/whitepaper"}
                 aria-label="Whitepaper"
                 target="_blank"
                 rel="noreferrer"
+                id="_gtm_clicks_on_whitepaper"
                 className={styles.headerBtnLinkNavBar}
               >
                 {" "}
                 <Button>{t("whitepaper")}</Button>
-              </Link>
+              </a>
               )}
             </div>
           </Navbar.Collapse>
           {!isMobile && (
-            <Link
-              to={"https://docs.praora.com/whitepaper"}
+            <a
+              href={"https://docs.praora.com/whitepaper"}
               aria-label="Whitepaper"
               target="_blank"
               rel="noreferrer"
+              id="_gtm_clicks_on_whitepaper"
               className={styles.headerBtnLink}
             >
               {" "}
               <Button>{t("whitepaper")}</Button>
-            </Link>
+            </a>
           )}
           <div className={styles.toggleBar} onClick={handleClick}>
             <Image src={bar} fluid alt="" />

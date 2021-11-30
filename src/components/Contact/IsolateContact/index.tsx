@@ -135,6 +135,7 @@ function Contact() {
                 <div className="d-flex justify-content-center">
                   {/* @ts-ignore */}
                   <form
+                    id="contact_form"
                     className={hasSubmited ? styles.disabled : ""}
                   >
                     <div className={styles.formContent}>
@@ -196,7 +197,6 @@ function Contact() {
                             autoClose: 5000,
                           })
                         }
-                        // onChange={() => onSubmit}
                       />
                     </div>
                   </form>
