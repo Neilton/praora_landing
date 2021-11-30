@@ -65,7 +65,7 @@ function Contact() {
       if (recaptchaRef.current !== null) {
         const result = await recaptchaRef.current.executeAsync();
         console.log(result);
-        return result;
+        return true;
 
       }
     } catch (err) {
@@ -136,7 +136,6 @@ function Contact() {
                   {/* @ts-ignore */}
                   <form
                     className={hasSubmited ? styles.disabled : ""}
-                    onSubmit={handleSubmit(onSubmit)}
                   >
                     <div className={styles.formContent}>
                       <div className={styles.formGroup}>
@@ -190,6 +189,7 @@ function Contact() {
                         ref={recaptchaRef}
                         sitekey={ReCAPTCHAKey}
                         badge="inline"
+                        onChange={() => handleSubmit(onSubmit)}
                         onExpired={redoCaptcha}
                         onErrored={() =>
                           toast.error(t("HumSomethingGoesWrong"), {
