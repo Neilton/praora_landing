@@ -103,6 +103,17 @@ function NavBar() {
                   <li className={styles.navItem}>{t("contact")}</li>
                 </Nav.Item>
               </RLink>
+              <a
+                href={"https://praora.com/ioratoken"}
+                aria-label="Iora Token"
+                target="_blank"
+                rel="noreferrer"
+                className={styles.navLink}
+              >
+                <Nav.Item>
+                  <li className={styles.navItem}>{t("Token")}</li>
+                </Nav.Item>
+              </a>
               {isMobile && (<a
                 href={"https://docs.praora.com/whitepaper"}
                 aria-label="Whitepaper"

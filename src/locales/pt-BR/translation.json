@@ -75,5 +75,47 @@
     "Parte 2": "Nos últimos 6 meses ele ingressou em uma grande empresa de fintech relacionada a soluções de pagamento chamada dLocal, também desenvolvendo aplicativos Java sobre arquiteturas de microsserviço.",
     "Parte 3": "Ele também está interessado em tecnologia de blockchain e criptoeconomia, onde as está aprendendo e tentando contribuir para o desenvolvimento de aplicativos distribuídos."
   },
-  "Links": "Links"
+  "Links": "Links",
+  "Token": "Token",
+  "Iora": {
+    "Part1": "Iora: O token para ",
+    "Part2": "prestadores de serviços",
+    "Part3": "Iora é o token da Praora e além de trazer a experiência de uma ",
+    "Part4": "plataforma descentralizada, ainda te dá benefícios incríveis para produtores de conteúdo."
+  },
+  "BuyIora": "Compra Ioras",
+  "ContractAddress": "Endereço do contrato",
+  "SectionInvesting": {
+    "Part1": "Invista em Iora e tenha uma",
+    "Part2": "experiência descentralizada"
+  },
+  "TokenFeatures": {
+    "Part1": "Faça lives",
+    "Part2": "facilmente",
+    "Part3": "Conecte",
+    "Part4": "sua carteira"
+  },
+  "Reasons": {
+    "Part1": "A hora de investir é agora!",
+    "Part2": "O mercado de tokens e criptomoedas nunca esteve tão aquecido como agora. Cada vez mais, o mercado financeiro se interessa mais pelo assunto, visto que um dos maiores diferenciais dessa área é a tecnologia trazida pelo blockchain que evitam fraudes e deixam as transações mais seguras. Além de contar com toda a segurança da blockchain, os tokens ainda trazem benefícios para os portadores.",
+    "Part3": "Ao comprar a Iora, os portadores serão beneficiados com repasse de 3% no valor de transações e ainda usaremos uma porcentagem das transações para investimento visando a expansão da plataforma.",
+    "Part4": "Acesse nosso ",
+    "Part5": "e veja todos os detalhes sobre a Iora",
+    "Part6": "Descentralizado e seguro",
+    "Part7": "A Praora oferece uma estrutura totalmente descentralizada e segura pra usuários que não querem expor seus dados pessoais. Oferecemos uma plataforma para recebimentos e pagamentos por criptomoedas de forma instantânea e eficiente.",
+    "Part8": "Inicie lives de ",
+    "Part9": "forma descomplicada",
+    "Part10": "Queremos que qualquer usuário possa iniciar uma live de forma totalmente descomplicada e sem nenhuma burocracia. Nosso foco é dar a oportunidade para criadores de conteúdos poderem facilmente ter um canal de streaming monetizado através de doações, inscrições e publicidades.",
+    "Part11": "Conecte sua Carteira",
+    "Part12":  "Os usuários da Praora podem conectar qualquer carteira de cripto dentro da plataforma e podem, inclusive, utilizar a nossa carteira, PraWallet. Também é possível sincronizar sua conta no Metamask e assim usufruir de toda a segurança e benefícios que uma rede descentralizada pode oferecer.",
+    "Part13": "Uma plataforma",
+    "Part14": "totalmente descentralizada",
+    "Part15": "47% dos usuários tem um receio em compartilhar dados pessoais dentro de uma plataforma e por isso, optam por utilizar nomes ficticios para manter a privacidade. Nós da Praora, nos preocupamos bastante com a segurança dos dados dos nossos usuários, portanto, oferecemos uma plataforma descentralizada, segura e totalmente livre de censuras governamentais. Você pode acessar nossas regras de forma totalmente transparente clicando aqui"
+  },
+  "Community": {
+    "Part1": "Seja um membro ativo",
+    "Part2": "do Praora e investa em",
+    "Part3": "Iora e faça parte dessa nova forma de",
+    "Part4": "fazer negócios na Web 3.0"
+  }
 }

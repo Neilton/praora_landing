@@ -75,5 +75,49 @@
       "Part2": " In the last 6 months he joined into a big fintech company related to payment solutions called dLocal also developing Java applications over microservice architectures.",
       "Part3": "He also interested in blockchain technology and crypto economy where he is learning them and trying to contribute to develop distributed apps."
     },
-    "Links": "Links"
+    "Links": "Links",
+    "Token": "Token",
+    "Iora": {
+      "Part1": "Iora: The Token for ",
+      "Part2": "services providers",
+      "Part3": "Iora is Praora's token and in the our main goal is to bringing the experience of a",
+      "Part4": "decentralized platform, and gives you incredible benefits for content producers."
+    },
+    "BuyIora": "Buy Iora",
+    "ContractAddress": "Contract Address",
+    "SectionInvesting": {
+      "Part1": "Invest in IORA and enjoy a full",
+      "Part2": "decentralized experience"
+    },
+    "TokenFeatures": {
+      "Part1": "Create lives",
+      "Part2": "easily",
+      "Part3": "Connect",
+      "Part4": "you wallet",
+      "Part5": "Totally",
+      "Part6": "decentralized"
+    },
+    "Reasons": {
+      "Part1": "The time to invest is now!",
+      "Part2": "The market for tokens and cryptocurrencies has never been as hot as it is now. Increasingly, the financial market is more interested in the subject, since one of the biggest differentials in this area is the technology brought by the blockchain that prevent fraud and make transactions more secure. In addition to having all the security of the blockchain, tokens also bring benefits to holders.",
+      "Part3": "When purchasing Iora, cardholders will benefit from a transfer of 3% in the value of transactions and we will also use a percentage of transactions for investment in order to expand the platform.",
+      "Part4": "Check our ",
+      "Part5": "and see more details about Iora",
+      "Part6": "Decentralized and secure",
+      "Part7": "Praora offers a completely decentralized and secure structure for users who do not want to expose their personal data. We offer a platform for instant and efficient cryptocurrency receipts and payments.",
+      "Part8": "Create lives",
+      "Part9": "smoothly",
+      "Part10": "We want any user to be able to start a live in a completely uncomplicated way and without any bureaucracy. Our focus is to give content creators the opportunity to easily have a monetized streaming channel through donations, subscriptions and advertising.",
+      "Part11": "Connect your wallet",
+      "Part12": "Praora users can connect any crypto wallet within the platform and can even use our wallet, PraWallet. It is also possible to synchronize your Metamask account and thus enjoy all the security and benefits that a decentralized network can offer.",
+      "Part13": "A platform",
+      "Part14": "totatly decentralized",
+      "Part15": "47% of users are afraid to share personal data within a platform and therefore choose to use fictitious names to maintain privacy. We at Praora are very concerned about the security of our users' data, therefore, we offer a decentralized, secure and totally free from government censorship platform. You can access our rules completely transparently by clicking here"
+    },
+    "Community": {
+      "Part1": "Be an active member",
+      "Part2": "from Praora or you can",
+      "Part3": "Invest in Iora and be part of this new way to",
+      "Part4": "make business on Web 3.0."
+    }
   }
