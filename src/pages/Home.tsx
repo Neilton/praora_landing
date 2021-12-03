@@ -7,6 +7,7 @@ import More from "../components/More";
 import Resources from "../components/Resources";
 import Team from "../components/Team";
 import Roadmap from "../components/Roadmap";
+import VideoPresentation from "../components/VideoPresentation"
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
       <More />
       <Roadmap />
       <Team />
+      <VideoPresentation />
       <IsolateContact />
     </>
   );
