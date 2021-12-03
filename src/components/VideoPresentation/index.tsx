@@ -1,17 +1,15 @@
 import { useTranslation } from 'react-i18next';
 import "../../assets/shared/styles/style.css";
 import "../../assets/shared/styles/responsive.css";
+import { isMobile } from "react-device-detect";
 import YouTube from 'react-youtube';
 
 function VideoPresentation() {
     const [t] = useTranslation();
 
     const opts = {
-        height: '390',
-        width: '640',
-        playerVars: {
-          autoplay: 1,
-        },
+        height: isMobile ? '260' : "500",
+        width: isMobile ? '340' : "900",
       };
 
       const _onReady = (event: { target: { pauseVideo: () => void; }; }) => {
@@ -31,7 +29,7 @@ function VideoPresentation() {
             <img src="assets/img/why-participate.png" className="img-fluid" alt="" />
           </div>
           <div className="why-parti-cont-rit d-flex justify-content-center">
-              <YouTube videoId="yFGAXqMFg6Q" onReady={_onReady} />
+              <YouTube opts={opts} videoId="yFGAXqMFg6Q" onReady={_onReady} />
           </div>
         </div>
       </div>
