@@ -60,5 +60,20 @@
   "MessageWrong": "Tem alguma coisa errada nesse campo.",
   "ThanksForYourInteresting": "Uau! Obrigado pelo seu interesse.",
   "HumSomethingGoesWrong": "Hum... Alguma coisa deu errado no formulário.",
-  "ReCAPTCHA": "Por favor, use o ReCAPTCHA."
+  "ReCAPTCHA": "Por favor, use o ReCAPTCHA.",
+  "Founders": "Fundadores",
+  "PedroDesc": {
+    "Parte 1": "Graduado em Engenharia de Software, Análise e Desenvolvimento de Sistemas no Rio de Janeiro, Brasil também fez intercâmbio em uma Universidade em Santiago, Chile, onde conseguiu ganhar espanhol e estudou DevOps, compiladores UNIX e Gerenciamento de Projetos.",
+    "Parte 2": "Alta experiência trabalhando em infraestrutura de TI e computação em nuvem. Ele iniciou vários projetos, como desenvolvedor Full-stack no Paypal, Western Union e Citi Ventures, criando vários MVPs de sucesso. Nos últimos 2 anos, especializou-se em soluções de aplicativos descentralizadas. "
+  },
+  "CarlosDesc": {
+    "Parte 1": "Carlos é engenheiro e empresário no Brasil. Trabalha com tecnologia e automação há mais de 30 anos. Possui vasta experiência no mercado nacional desde a promoção de eventos corporativos ao desenvolvimento de produtos e organizações empresariais. Tem se dedicado a promoção de pequenas startups no setor de tecnologia."
+  },
+  "Neiton": "Com uma trajetória profissional focada no desenvolvimento, implantação e gestão de soluções tecnológicas para empresas do mercado segurador, varejo e financeiro, gerenciou equipes na entrega de projetos que permitiram o desenvolvimento de produtos para o mercado financeiro. Possui MBA com foco em arquitetura de soluções, além de certificações em arquitetura de soluções em nuvem.",
+  "Ramiro": {
+    "Parte 1": "Ramiro começou a estudar software de engenharia em 2015 na ORT University Uruguai. Aos 26 anos ingressou em grandes empresas de tecnologia como Salesforce e XPO Logistics trabalhando como Backend Software Developer participando de diversos projetos desenvolvidos em Java. nos últimos 6 meses, ele ingressou em uma grande empresa de fintech relacionada a soluções de pagamento chamada dLocal, também desenvolvendo aplicativos Java em arquiteturas de microsserviço.",
+    "Parte 2": "Nos últimos 6 meses ele ingressou em uma grande empresa de fintech relacionada a soluções de pagamento chamada dLocal, também desenvolvendo aplicativos Java sobre arquiteturas de microsserviço.",
+    "Parte 3": "Ele também está interessado em tecnologia de blockchain e criptoeconomia, onde as está aprendendo e tentando contribuir para o desenvolvimento de aplicativos distribuídos."
+  },
+  "Links": "Links"
 }

@@ -60,5 +60,20 @@
     "MessageWrong": "Something is wrong on this area.",
     "ThanksForYourInteresting": "Wow! Thanks for your interesting",
     "HumSomethingGoesWrong": "Hum... Something goes wrong with your ReCAPTCHA.",
-    "ReCAPTCHA": "Please, use the ReCAPTCHA."
+    "ReCAPTCHA": "Please, use the ReCAPTCHA.",
+    "Founders": "Founders",
+    "PedroDesc": {
+      "Part1": "Degree in Software Engineering, Analysis and System Development in Rio de Janeiro, Brazil also did an exchange in a University in Santiago, Chile, where he could earn Spanish and studied DevOps, UNIX compilers, and Project Management.",
+      "Part2" : "High experience working in IT Infrastructure and Cloud Computing. He started several projects, as a Full-stack developer at Paypal, Western Union, and Citi Ventures, creating several successful MVPs. For the last 2 years, it has specialized in decentralized application solutions."
+    },
+    "CarlosDesc": {
+      "Part1": "Carlos is an engineer and entrepreneur in Brazil. He has been working with technology and automation for over 30 years. He has extensive experience in the national market from promoting corporate events to product development and business organizations. Last years, he has been dedicated to promoting small startups in the technology sector."
+    },
+    "Neiton": "With a professional trajectory focused on the development, implementation and management of technological solutions for companies in the insurance, retail and financial market, he managed teams in the delivery of projects that allowed the development of products for the financial market. He has an MBA focused on solutions architecture, in addition to certifications in cloud solutions architecture.",
+    "Ramiro": {
+      "Part1": "Ramiro started studying software engineering in 2015 at ORT University Uruguay and is almost graduated. At his 26th he joined big tech companies such as Salesforce and XPO Logistics working as a Backend Software Developer participating on several projects developed in Java. In the last 6 months he joined into a big fintech company related to payment solutions called dLocal also developing Java applications over microservice architectures. He also interested in blockchain technology and crypto economy where he is learning them and trying to contribute to develop distributed apps",
+      "Part2": " In the last 6 months he joined into a big fintech company related to payment solutions called dLocal also developing Java applications over microservice architectures.",
+      "Part3": "He also interested in blockchain technology and crypto economy where he is learning them and trying to contribute to develop distributed apps."
+    },
+    "Links": "Links"
   }

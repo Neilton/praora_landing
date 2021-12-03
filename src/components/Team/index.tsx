@@ -18,29 +18,25 @@ function Team() {
   return (
     <section id="team">
      <div className="about-us">
-        <h4>Team</h4>
+        <h4>{t('team')}</h4>
         <div className="about-content pl-40">
           <div className="about-row">
             <div className="founder-content pedro-bio">
-              <h6>Fundadores</h6>
+              <h6>{t("Founders")}</h6>
               <h6 className="founder-name">Pedro Magalhaes</h6>
               <p>
-                Degree in Software Engineering, Analysis and System Development in Rio de Janeiro, Brazil also
-                did an exchange in a University in Santiago, Chile, where he could earn Spanish and studied
-                DevOps, UNIX compilers, and Project Management.
+              {t("PedroDesc.Part1")}
               </p>
               <p>
-                High experience working in IT Infrastructure and Cloud Computing. He started several projects,
-                as a Full-stack developer at Paypal, Western Union, and Citi Ventures, creating several
-                successful MVPs. For the last 2 years, it has specialized in decentralized application
-                solutions.
+                
+                {t("PedroDesc.Part2")}
               </p>
               <hr className="c_hr p_hr" />
               <div className="abt-links">
                 <h5>Links</h5>
                 <ul>
-                  <li><a href="#"><img src={Github} alt="" /></a></li>
-                  <li><a href="#"><img src={Linkedin} alt="" /></a></li>
+                  <li><a href="https://github.com/pedrosgmagalhaes/"><img src={Github} alt="" /></a></li>
+                  <li><a href="https://www.linkedin.com/in/pemagalhaes/"><img src={Linkedin} alt="" /></a></li>
                 </ul>
               </div>
             </div>
@@ -55,16 +51,13 @@ function Team() {
             <div className="founder-content carlos-bio">
               <h6 className="founder-name">Carlos Gaspar</h6>
               <p>
-                Carlos is an engineer and entrepreneur in Brazil. He has been working with technology and
-                automation for over 30 years. He has extensive experience in the national market from promoting
-                corporate events to product development and business organizations. Last years, he has been
-                dedicated to promoting small startups in the technology sector.
+                {t("CarlosDesc.Part1")}
               </p>
               <hr className="c_hr ca_hr" />
               <div className="abt-links">
                 <h5>Links</h5>
                 <ul>
-                  <li><a href="#"><img src={Linkedin} alt="" /></a></li>
+                  <li><a href="https://www.linkedin.com/in/carlos-g-02b4771"><img src={Linkedin} alt="" /></a></li>
                 </ul>
               </div>
             </div>
@@ -74,15 +67,11 @@ function Team() {
               <h6>CTO</h6>
               <h5 className="founder-name">Neiton</h5>
               <p>
-                Com trajetória profissional focada em desenvolvimento, implementação e gestão de soluções
-                tecnológicas para empresas do mercado de seguro, varejo e mercado financeiro, gerenciou equipes
-                na entrega de projetos que permitiram o desenvolvimento de produtos para o mercado financeiro.
-                Possui MBA com foco em arquitetura de soluções, além de certificações em arquitetura de soluções
-                para nuvem.
+              {t("Neiton")}
               </p>
               <hr className="c_hr n_hr" />
               <div className="abt-links">
-                <h5>Links</h5>
+                <h5>{t("Links")}</h5>
                 <ul>
                   <li><a href="#"><img src={Linkedin} alt="" /></a></li>
                 </ul>
@@ -100,23 +89,19 @@ function Team() {
               <h6>Backend Leader / Project Manager</h6>
               <h6 className="founder-name">Ramiro Gonzalez</h6>
               <p>
-                Ramiro started studying software engineering in 2015 at ORT University Uruguay and is almost
-                graduated. At his 26th he joined big tech companies such as Salesforce and XPO Logistics working
-                as a Backend Software Developer participating on several projects developed in Java.
+              {t("Ramiro.Part1")}
               </p>
               <p>
-                In the last 6 months he joined into a big fintech company related to payment solutions called
-                dLocal also developing Java applications over microservice architectures.
+              {t("Ramiro.Part2")}
               </p>
               <p>
-                He also interested in blockchain technology and crypto economy where he is learning them and
-                trying to contribute to develop distributed apps
+              {t("Ramiro.Part3")}
               </p>
               <hr className="c_hr r_hr mt-3" />
               <div className="abt-links">
                 <h5 className="pt-0">Links</h5>
                 <ul>
-                  <li><a href="#"><img src={Linkedin} alt="" /></a></li>
+                  <li><a href="https://www.linkedin.com/in/ramiro-gonzalez/"><img src={Linkedin} alt="Ramiro Linkedin" /></a></li>
                 </ul>
               </div>
             </div>
@@ -130,7 +115,7 @@ function Team() {
                 </div>
                 <h6>Lucas Bueno</h6>
                 <p>UX/UI Designer</p>
-                <a href="#"><img src={In} alt="" /></a>
+                <a href="https://www.linkedin.com/in/lucasbuenno/"><img src={In} alt="Lucas Bueno Linkedin" /></a>
               </div>
               <div className="eqp-cont-box">
                 <div className="eqp-img-box">
@@ -138,7 +123,7 @@ function Team() {
                 </div>
                 <h6>Marina Sales</h6>
                 <p>UX/UI Designer</p>
-                <a href="#"><img src={In} alt="" /></a>
+                <a href="https://www.linkedin.com/in/volzsales/"><img src={In} alt="" /></a>
               </div>
               <div className="eqp-cont-box">
                 <div className="eqp-img-box">
@@ -146,7 +131,7 @@ function Team() {
                 </div>
                 <h6>Antonio Mercadante</h6>
                 <p>Fullstack Developer</p>
-                <a href="#"><img src={In} alt="" /></a>
+                <a href="https://www.linkedin.com/in/antonio-mercadante-5560a919a/"><img src={In} alt="" /></a>
               </div>
             </div>
           </div>
