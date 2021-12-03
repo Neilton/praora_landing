@@ -82,50 +82,6 @@ function Team() {
               <img src={Neilton} alt="" className="img-fluid" />
             </div>
           </div>
-          <div className="about-row sm2_row2">
-            <div className="founder-pic pic-carlos same2_over_pic">
-              <img src={Ramiro} alt="" className="img-fluid" />
-            </div>
-            <div className="founder-content">
-              <h6>Backend Engineer Leader / PM</h6>
-              <h6 className="founder-name">Ramiro Gonzalez</h6>
-              <p>
-              {t("Ramiro.Part1")}
-              </p>
-              <p>
-              {t("Ramiro.Part2")}
-              </p>
-              <p>
-              {t("Ramiro.Part3")}
-              </p>
-              <hr className="c_hr r_hr mt-3" />
-              <div className="abt-links">
-                <h5 className="pt-0">Links</h5>
-                <ul>
-                  <li><a href="https://www.linkedin.com/in/ramiro-gonzalez/"><img src={Linkedin} alt="Ramiro Linkedin" /></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="about-row">
-            <div className="founder-content">
-              <h6>Frontend Enginner Leader / PM</h6>
-              <h5 className="founder-name">Peterson</h5>
-              <p>
-              {t("Peterson")}
-              </p>
-              <hr className="c_hr n_hr" />
-              <div className="abt-links">
-                <h5>{t("Links")}</h5>
-                <ul>
-                  <li><a href="https://www.linkedin.com/in/petersonmedina/"><img src={Linkedin} alt="" /></a></li>
-                </ul>
-              </div>
-            </div>
-            <div className="founder-pic pic-neiton same1_over_pic">
-              <img src={Peterson} alt="" className="img-fluid" />
-            </div>
-          </div>
           <div className="equipe-wrp">
             <h6>Equipe</h6>
             <div className="eqp-row">
