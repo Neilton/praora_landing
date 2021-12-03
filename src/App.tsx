@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Layout from "../src/components/Layout";
 import Home from "../src/pages/Home";
 import Financial from "../src/pages/Financial";
+import IoraToken from "../src/pages/IoraToken";
 import TagManager from 'react-gtm-module'
 
 const tagManagerArgs = {
@@ -31,6 +32,7 @@ function App() {
         <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/openfinance" element={<Financial />} />
+        <Route path="/ioratoken" element={<IoraToken />} />
         </Route>
       </Routes>
     </BrowserRouter>

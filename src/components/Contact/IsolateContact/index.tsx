@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import Rafiki from "../../../assets/img/rafiki.png";
 import Slack from "../../../assets/img/icon/slack.png";
 import Instagram from "../../../assets/img/icon/instagram.png";
-import Linkedin from "../../../assets/img/icon/linkedin.png";
+import Linkedin from "../../../assets/img/icon/linkedin-contact.png";
 import styles from "./styles.module.scss";
 import Button from "../../Core/Button";
 import { useForm } from "react-hook-form";
@@ -18,7 +18,7 @@ type FormData = {
   message: string;
 };
 function Contact() {
-  const [t] = useTranslation();
+  const {t} = useTranslation();
   const {
     register,
     handleSubmit,
