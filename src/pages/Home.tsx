@@ -5,6 +5,8 @@ import Manage from "../components/Manage";
 import Market from "../components/Market";
 import More from "../components/More";
 import Resources from "../components/Resources";
+import Team from "../components/Team";
+import Roadmap from "../components/Roadmap";
 
 function Home() {
   return (
@@ -15,6 +17,8 @@ function Home() {
       <Market />
       <Manage />
       <More />
+      <Roadmap />
+      <Team />
       <IsolateContact />
     </>
   );

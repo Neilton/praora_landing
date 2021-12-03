@@ -1,0 +1,997 @@
+@media(max-width: 1440px) {
+    .bgt1 {
+        top: 400px;
+        max-width: 340px;
+    }
+}
+
+@media(max-width: 1366px) {
+    .nav {
+        margin-right: 28px;
+    }
+
+    .buying-tkn-container {
+        max-width: 1270px;
+    }
+
+    .about-us {
+        max-width: 1275px;
+    }
+
+    .founder-content {
+        max-width: 570px;
+    }
+}
+
+@media(max-width: 1280px) {
+    .nav {
+        margin-right: 0;
+    }
+
+    .nav li:not(:last-child) {
+        margin-right: 23px;
+    }
+
+    .buying-tkn-container {
+        max-width: 1270px;
+    }
+
+    .dd-container {
+        margin-right: 25px;
+    }
+
+    .buying-tkn-lft {
+        padding-left: 32px;
+    }
+
+    .about-us {
+        max-width: 1200px;
+    }
+
+    .founder-pic {
+        max-width: 350px;
+    }
+
+    .abg1 {
+        top: 238px;
+        max-width: 500px;
+    }
+
+    .abg2 {
+        max-width: 511px;
+    }
+
+    .abg3 {
+        top: 1215px;
+        max-width: 500px;
+    }
+
+    .abg4 {
+        bottom: 641px;
+        max-width: 716px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .nav-container {
+        padding: 20px 20px;
+    }
+
+    .toggle-bar {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: -240px;
+        height: 100%;
+        background: #fff;
+        width: 240px;
+        z-index: 100;
+        display: block;
+        margin-right: 0;
+        padding: 25px 20px;
+        transition: left .3s ease;
+    }
+
+    .nav.active {
+        left: 0;
+    }
+
+    #lang-htmlselect {
+        margin-left: auto;
+    }
+
+    .nav li {
+        margin-right: 0 !important;
+    }
+
+    .nav li a {
+        transition: .3s ease;
+        padding: 8px 0px;
+        display: block;
+    }
+
+    .pl-55 {
+        padding-left: 20px;
+    }
+
+    .pl-40 {
+        padding-left: 20px;
+    }
+
+    .roadmp-list-wrp {
+        padding-left: 0px;
+        margin-right: 20px
+    }
+
+    .road-icn-it {
+        margin-right: 30px;
+    }
+
+    .road-lst-rit p {
+        padding-left: 30px;
+    }
+
+    .why-parti-row {
+        padding: 0px 20px;
+    }
+
+    .wizard {
+        width: 490px;
+        padding: 60px 35px 48px 35px;
+    }
+
+    .bgt1 {
+        top: 300px;
+    }
+
+    .toggle-bar img {
+        width: 35px;
+    }
+
+    .about-us {
+        padding-left: 20px;
+    }
+
+    .same1_over_pic::after {
+        content: '';
+        top: -20px;
+        right: -15px;
+    }
+
+    .pic-carlos::after {
+        content: '';
+        right: -20px;
+        top: 14px;
+    }
+
+    .founder-content {
+        max-width: 510px;
+    }
+
+    .founder-pic {
+        max-width: 330px;
+    }
+
+    .abg4 {
+        left: 10px;
+        bottom: 741px;
+        max-width: 576px;
+    }
+
+    .iora_invest_box {
+        width: 300px;
+        height: 330px;
+    }
+
+    .iora-mockup-box {
+        width: 48%;
+    }
+
+    .uma-platform-right {
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .uma-platform-left h3 br {
+        display: none;
+    }
+
+    .uma-platform-left p br {
+        display: none;
+    }
+}
+
+
+@media(max-width: 834px) {
+    .road-itm-cont {
+        width: 260px;
+    }
+
+    .pl-40 {
+        padding-left: 0px;
+    }
+
+    .roadmp-lst-cont span {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    .nav-container {
+        padding: 20px 16px;
+    }
+
+    .pl-55 {
+        padding-left: 16px;
+    }
+
+    .why-parti-row {
+        padding: 0px 16px;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .why-parti-cont-rit {
+        width: 100%;
+    }
+
+    .why-parti-cont {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-top: -15px;
+
+    }
+
+    .buying-tkn-container {
+        background: none;
+    }
+
+    .buying-tkn-rw {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .buying-tkn-lft {
+        padding-left: 60px;
+        padding-bottom: 115px;
+        padding-right: 60px;
+        background: #1c1c1c;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .wizard {
+        margin: -55px auto 0;
+    }
+
+    .why-participate-wrp {
+        padding-bottom: 60px;
+    }
+
+    .buying-tkn-wrp {
+        margin-bottom: 37px;
+    }
+
+    .footer-wrp {
+        padding-top: 37px;
+        padding-bottom: 37px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .bgt1 {
+        top: 100px;
+    }
+
+    .about-us {
+        padding-right: 34px;
+    }
+
+    .about-row {
+        margin-bottom: 0px;
+        padding-bottom: 150px;
+        align-items: flex-start;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .founder-content {
+        max-width: 100%;
+    }
+
+    .same1_over_pic {
+        margin-left: auto;
+    }
+
+    .sm2_row2 {
+        flex-direction: column-reverse;
+    }
+
+    .abg1 {
+        top: 380px;
+        max-width: 320px;
+    }
+
+    .abg2 {
+        max-width: 384px;
+        top: 826px;
+    }
+
+    .abg3 {
+        top: 46%;
+        max-width: 360px;
+    }
+
+    .abt-links {
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+    }
+
+    .c_hr {
+        margin-bottom: 50px;
+    }
+
+    .eqp-cont-box:not(:last-child) {
+        margin-right: 15px;
+    }
+
+
+
+
+    .iora-plat-wrp h2 {
+        font-size: 42px;
+        line-height: 56px;
+    }
+
+    .iora-imagem-box.left-imagem {
+        margin-right: 20px;
+    }
+
+    .iora-imagem {
+        padding-right: 16px;
+    }
+
+    .iora-invest-icon {
+        width: 90px;
+        height: 90px;
+    }
+
+    .iora-invest-icon img {
+        width: 50%;
+    }
+
+    .iora_invest_box {
+        width: 230px;
+        height: 290px;
+    }
+
+    .uma-platform-right {
+        display: none;
+    }
+
+    .iora-bottm-contact {
+        display: none;
+    }
+
+    .uma-platform-content {
+        padding: 45px 65px 60px 50px;
+    }
+
+    .uma-platform-left a {
+        margin-bottom: 0px;
+    }
+
+    .uma-sec-platf-wrp {
+        padding-top: 20px;
+        padding-bottom: 110px;
+    }
+}
+
+@media(max-width: 568px) {
+    .nav-container {
+        padding: 14px 16px;
+    }
+
+    .hder-btn {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .main-logo img {
+        padding-right: 15px;
+    }
+
+    .main-logo span {
+        font-size: 35px;
+        top: 3px;
+    }
+
+    .toggle-bar {
+        margin-left: 0;
+    }
+
+    .dd-select {
+        width: 70px !important;
+    }
+
+    .dd-option-image,
+    .dd-selected-image {
+        margin-right: 5px;
+        width: 30px !important;
+    }
+
+    .dd-options {
+        max-width: 270px;
+    }
+
+    .dd-container {
+        margin-right: 0px;
+    }
+
+    .toggle-bar img {
+        width: 25px;
+    }
+
+    .participate-ico-wrp {
+        padding-right: 16px;
+    }
+
+    .partic_row {
+        flex-direction: column;
+    }
+
+    .parti-ico-cont-rit {
+        flex: 1;
+        text-align: center;
+        margin-top: 0;
+        padding-top: 24px;
+    }
+
+    h4 {
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0;
+    }
+
+    .parti-ico-heading {
+        padding-bottom: 15px;
+    }
+
+    h6 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .parti-ico-cont p {
+        padding-bottom: 20px;
+    }
+
+    .compr-token {
+        display: none;
+    }
+
+    .participate-ico-wrp {
+        margin-top: 25px;
+        padding-bottom: 35px;
+    }
+
+    .roadmap-tp-cont h6:not(:first-child) {
+        margin-bottom: 24px;
+    }
+
+    .roadmp-lst-cont {
+        padding-bottom: 0px;
+    }
+
+    .roadmp-list-wrp li {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .roadmp-list-wrp li:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .road-lst-lft {
+        border-right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .road-lst-rit p {
+        padding-left: 0;
+    }
+
+    .road-icn-it {
+        width: 48px;
+        height: 48px;
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+
+    .road-icn-it img {
+        width: 20px;
+    }
+
+    .roadmp-list-wrp {
+        padding-left: 15px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        margin-right: 0;
+        border-left: 1px solid #757574;
+    }
+
+    .road-itm-cont h6 {
+        margin-bottom: 3px;
+    }
+
+    .road-itm-cont span {
+        margin-bottom: 5px;
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .roadmap-wrp {
+        padding-bottom: 26px;
+    }
+
+    .why-parti-heading {
+        margin-bottom: 24px;
+        padding-left: 16px;
+    }
+
+    .why-parti-heading p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .video-js.partiVideo .vjs-big-play-button {
+        left: 39%;
+        top: 20%;
+        transform: translateX(-50%);
+    }
+
+    .partiVideo.my-video-dimensions.vjs-fluid {
+        padding-top: 59%;
+    }
+
+    .why-parti-cont {
+        margin-top: -7px;
+    }
+
+    .why-parti-cont img {
+        max-width: 215px;
+    }
+
+    .why-participate-wrp {
+        padding-bottom: 25px;
+    }
+
+    .buying-tkn-lft h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .buying-tkn-lft h5 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .buying-tkn-lft p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .buying-tkn-lft {
+        padding-left: 40px;
+        padding-bottom: 90px;
+        padding-right: 40px;
+    }
+
+    .wizard {
+        width: 91%;
+        padding: 50px 40px 25px 40px;
+        height: auto;
+    }
+
+    .step-app>.step-footer>.step-btn {
+        width: 100%;
+    }
+
+    .btns {
+        height: 47px;
+    }
+
+    .nav-steps li a {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        box-shadow: 0px 0px 1px 8px #fff;
+    }
+
+    .nav-steps::after {
+        top: 8px;
+    }
+
+    .nav-steps li span {
+        font-size: 10px;
+        line-height: 12px;
+        margin-top: 8px;
+    }
+
+    .step-app.stp_apps>.step-steps.nav-steps {
+        margin-bottom: 20px;
+    }
+
+    .step-grp label {
+        font-size: 12px;
+        line-height: 18px;
+        margin-left: 2px;
+    }
+
+    .step-grp .form-control {
+        height: 37px;
+        padding: 8px 11px;
+        font-size: 12px;
+    }
+
+    .form-group.step-grp:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .stp_p1 {
+        padding-bottom: 0px;
+    }
+
+    .prev-btn {
+        top: 16px;
+        left: 10px;
+        width: 20px !important;
+        height: 24px;
+    }
+
+    .wallet-wrp {
+        height: 70px;
+    }
+
+    .brand-wallet-wrp {
+        gap: 15px;
+    }
+
+    .stp_p2 {
+        padding-bottom: 10px;
+    }
+
+    .form-group.fns_grp {
+        margin-bottom: 10px !important;
+    }
+
+    .wal_inpt img {
+        right: 8px;
+    }
+
+    .foo-row {
+        display: none;
+    }
+
+    .footer-content {
+        max-width: 120px;
+    }
+
+    .mb-fo-row {
+        display: block;
+        position: relative;
+        z-index: 10;
+    }
+
+    .footer-wrp {
+        padding-top: 32px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .bg {
+        width: 80%;
+    }
+
+    .bgm1 {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .bgb1 {
+        width: 60%;
+        bottom: 0%;
+    }
+
+
+
+
+    .about-us h4 {
+        padding-bottom: 15px;
+    }
+
+    .c_hr {
+        margin-bottom: 27px;
+        width: 156px;
+        margin-top: 15px;
+    }
+
+    .n_hr,
+    .p_hr {
+        margin-bottom: 55px;
+        max-width: 258px;
+    }
+
+    .abt-links ul li a img {
+        width: 24px;
+    }
+
+    .abt-links h5 {
+        font-size: 16px;
+        line-height: 23px;
+        padding-top: 0px;
+    }
+
+    .founder-pic {
+        max-width: 241px;
+    }
+
+    .about-row {
+        padding-bottom: 130px;
+    }
+
+    .abt-links {
+        bottom: 55px;
+    }
+
+    .pic-carlos {
+        margin-bottom: 10px;
+    }
+
+    .eqp-row {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .eqp-cont-box:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .eqp-cont-box {
+        margin-bottom: 30px;
+    }
+
+    .equipe-wrp {
+        padding-bottom: 40px;
+    }
+
+    .abg1 {
+        top: 8%;
+        max-width: 250px;
+    }
+
+    .abg2 {
+        max-width: 314px;
+        top: 18%;
+    }
+
+    .abg3 {
+        max-width: 266px;
+        top: 37%;
+    }
+
+    .abg4 {
+        left: 10px;
+        bottom: 34%;
+        max-width: 90%;
+    }
+
+    .about-us {
+        padding-right: 30px;
+    }
+
+    .about-us {
+        padding-left: 16px;
+    }
+
+
+
+    .iora-plat-wrp h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .iora-plat-wrp {
+        text-align: left !important;
+    }
+
+    .iora-plat-wrp {
+        padding-top: 65px;
+    }
+
+    .iora-add-contact {
+        width: 85px;
+    }
+
+    .iora-add-contact a:not(:last-child) {
+        margin-right: 3px;
+    }
+
+    .iora-top-contact {
+        margin-bottom: 24px;
+    }
+
+    .iora-plat-wrp p {
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 24px;
+    }
+
+    a.iora-btns {
+        width: 250px;
+        max-width: 100%;
+    }
+
+    .iora-plat-wrp a {
+        margin: 0 auto 24px;
+    }
+
+    .iora-imagem {
+        padding-bottom: 24px;
+    }
+
+    .iora-imagem-box.left-imagem {
+        margin-right: 10px;
+    }
+
+    .iora-imagem-box.left-imagem img {
+        border-radius: 0px 8px 8px 0px;
+    }
+
+    .iora-imagem-box.right-imagem img {
+        border-radius: 8px;
+    }
+
+    .iora-invest-wrp h3 {
+        font-size: 18px;
+        line-height: 27px;
+        padding-bottom: 15px;
+    }
+
+    .invest-row {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 36px;
+    }
+
+    .iora_invest_box {
+        width: 250px;
+        max-width: 100%;
+        height: 290px;
+        margin-right: 0;
+    }
+
+    .iora_invest_box:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .investing-agora h3 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        padding-bottom: 12px;
+    }
+
+    .token-page-wrp p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .investing-agora p:not(:last-child) {
+        padding-bottom: 20px;
+    }
+
+    .investing-agora {
+        padding-bottom: 36px;
+    }
+
+    .iora-mockup-box {
+        width: 49%;
+    }
+
+    .iora-mockup-box {
+        margin-bottom: 5px;
+    }
+
+    .iora-mockup {
+        padding-bottom: 36px;
+    }
+
+    .iora-item-cont h4 {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 500;
+    }
+
+    .iora-item-cont {
+        padding-bottom: 40px;
+    }
+
+    .uma-platform-left h3 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        padding-bottom: 6px;
+    }
+
+    .uma-platform-content {
+        padding: 20px 16px 28px 16px;
+    }
+
+    .uma-platform-left p {
+        flex-shrink: 0;
+        padding-bottom: 17px;
+    }
+
+    .uma-sec-platf-wrp {
+        padding-bottom: 70px;
+        padding-top: 0px;
+    }
+
+    .tkbg1 {
+        top: 2%;
+        width: 50%;
+    }
+
+    .tkbg2 {
+        display: none;
+    }
+
+    .tkbg3 {
+        top: -32%;
+        width: 100%;
+    }
+
+    .tkbg4 {
+        bottom: 27%;
+        width: 66%;
+    }
+}
+
+
+@media(max-width: 340px) {
+    .dd-options {
+        right: -30px;
+    }
+
+    .wizard {
+        width: 91%;
+        padding: 50px 20px 25px 20px;
+
+    }
+
+    .buying-tkn-lft {
+        padding-left: 20px;
+        padding-bottom: 90px;
+        padding-right: 20px;
+    }
+
+    a.iora-btns {
+        width: 100%;
+    }
+}
