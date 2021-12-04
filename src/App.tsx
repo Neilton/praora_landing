@@ -1,22 +1,23 @@
 import React from "react";
 import "./App.scss";
 import "./index.scss"
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "../src/components/Layout";
+import LandingPageLayout from "../src/components/Layout/LandingPage";
 import Home from "../src/pages/Home";
 import Financial from "../src/pages/Financial";
 import IoraToken from "../src/pages/IoraToken";
 import TagManager from 'react-gtm-module'
 
 const tagManagerArgs = {
-    gtmId: 'GTM-P9NWLN5'
+  gtmId: 'GTM-P9NWLN5'
 }
 
 TagManager.initialize(tagManagerArgs)
 
 declare global {
   interface Window {
-    dataLayer:any;
+    dataLayer: any;
   }
 }
 
@@ -30,9 +31,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/openfinance" element={<Financial />} />
-        <Route path="/ioratoken" element={<IoraToken />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/openfinance" element={<Financial />} />
+        </Route>
+        <Route element={<LandingPageLayout />}>
+          <Route path="/ioratoken" element={<IoraToken />} />
         </Route>
       </Routes>
     </BrowserRouter>

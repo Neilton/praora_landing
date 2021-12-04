@@ -851,7 +851,9 @@
     }
 
     .iora-imagem {
-        padding-bottom: 24px;
+        padding: 10px;
+        margin-bottom: 10vh;
+        margin-top: 10vh;
     }
 
     .iora-imagem-box.left-imagem {

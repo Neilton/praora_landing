@@ -86,7 +86,7 @@ function Roadmap() {
                                 </div>
                                 <div className="road-itm-cont">
                                     <h6>2022 - Jun</h6>
-                                    <span>MVP Launch</span>
+                                    <span>MVP 1.0 Launch</span>
                                 </div>
                             </div>
                             <div className="roadmp-lst-cont road-lst-rit">
@@ -104,14 +104,33 @@ function Roadmap() {
                                     </div>
                                 </div>
                                 <div className="road-itm-cont">
-                                    <h6>2022 - May</h6>
-                                    <span>New feature</span>
+                                    <h6>2022 - Dec</h6>
+                                    <span>MVP 2.0 Launch (IoraWallet)</span>
                                 </div>
                             </div>
                             <div className="roadmp-lst-cont road-lst-rit">
                                 <p>
-                                    Praora Wallet will be launched, with Login authentication via QR CODE, as well as
+                                    Iora Wallet will be launched, with Login authentication via QR CODE, as well as
                                     encrypted live chat integrated into the system.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="roadmp-lst-cont road-lst-lft">
+                                <div>
+                                    <div className="road-icn-it">
+                                        <img src="assets/img/icon/bx_bxs-rocket.png" alt="" className="img-fluid" />
+                                    </div>
+                                </div>
+                                <div className="road-itm-cont">
+                                    <h6>2023 - Jan</h6>
+                                    <span>Mobile application Launch</span>
+                                </div>
+                            </div>
+                            <div className="roadmp-lst-cont road-lst-rit">
+                                <p>
+                                    We will be the launch of the mobile platform to integrate the live and meetings service
+                                    to the system.
                                 </p>
                             </div>
                         </li>
@@ -123,14 +142,13 @@ function Roadmap() {
                                     </div>
                                 </div>
                                 <div className="road-itm-cont">
-                                    <h6>2022 - November</h6>
-                                    <span>Mobile Launch</span>
+                                    <h6>2023 - July</h6>
+                                    <span>Defi Exchange</span>
                                 </div>
                             </div>
                             <div className="roadmp-lst-cont road-lst-rit pb-0">
                                 <p>
-                                    Will be the launch of the mobile platform to integrate the live and meetings service
-                                    to the system.
+                                   First releasae from our first Defi on Iora Chain. Users will be able to exchange NFT and ERC20 tokens between differents blockchains.
                                 </p>
                             </div>
                         </li>
