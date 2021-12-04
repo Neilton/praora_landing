@@ -2,7 +2,6 @@
   "name": "praora_landing",
   "version": "0.1.0",
   "homepage": ".",
-  "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.1",
     "@testing-library/jest-dom": "^4.2.4",
