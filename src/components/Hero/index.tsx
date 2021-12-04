@@ -7,7 +7,6 @@ import { useTranslation } from 'react-i18next';
 
 function Hero() {
   const [t] = useTranslation();
-  
   return (
     <section className={styles.section}>
 
@@ -21,9 +20,11 @@ function Hero() {
               <p>
                 {t('description.part1')} {t('description.part2')}
               </p>
-              <Button>
-                <a id="clicks_on_getstarted_from_landing_page" href="https://app.praora.com" target="_blank" rel="noreferrer" >{t('getStarted')}</a>
-              </Button>
+              <a id="clicks_on_getstarted_from_landing_page" href="https://app.praora.com" target="_blank" rel="noreferrer" >
+                <Button>
+                  {t('getStarted')}
+                </Button>
+              </a>
             </div>
           </Col>
           <Col md={6}>
