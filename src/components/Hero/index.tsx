@@ -22,7 +22,7 @@ function Hero() {
                 {t('description.part1')} {t('description.part2')}
               </p>
               <Button>
-                {t('getStarted')}
+                <a id="clicks_on_getstarted_from_landing_page" href="https://app.praora.com" target="_blank" rel="noreferrer" >{t('getStarted')}</a>
               </Button>
             </div>
           </Col>
