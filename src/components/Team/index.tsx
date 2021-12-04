@@ -82,6 +82,25 @@ function Team() {
               <img src={Neilton} alt="" className="img-fluid" />
             </div>
           </div>
+          <div className="about-row pb_40 sm2_row2">
+          <div className="founder-pic pic-neiton same1_over_pic">
+              <img src={Peterson} alt="" className="img-fluid" />
+            </div>
+            <div className="founder-content">
+              <h6>Frontend Engineer Lead - PM</h6>
+              <h5 className="founder-name">Peterson Medina</h5>
+              <p>
+              {t("Peterson")}
+              </p>
+              <hr className="c_hr n_hr" />
+              <div className="abt-links">
+                <h5>{t("Links")}</h5>
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/petersonmedina/"><img src={Linkedin} alt="" /></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <div className="equipe-wrp">
             <h6>Equipe</h6>
             <div className="eqp-row">
