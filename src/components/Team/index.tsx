@@ -66,7 +66,7 @@ function Team() {
           <div className="about-row">
             <div className="founder-content">
               <h6>CTO</h6>
-              <h5 className="founder-name">Neilton</h5>
+              <h5 className="founder-name">Neilton Rocha</h5>
               <p>
               {t("Neiton")}
               </p>
@@ -74,7 +74,7 @@ function Team() {
               <div className="abt-links">
                 <h5>{t("Links")}</h5>
                 <ul>
-                  <li><a href="#"><img src={Linkedin} alt="" /></a></li>
+                  <li><a href="https://www.linkedin.com/in/neilton-rocha-60216960/"><img src={Linkedin} alt="" /></a></li>
                 </ul>
               </div>
             </div>
