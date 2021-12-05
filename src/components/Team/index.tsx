@@ -66,7 +66,7 @@ function Team() {
           <div className="about-row">
             <div className="founder-content">
               <h6>CTO</h6>
-              <h5 className="founder-name">Neiton</h5>
+              <h5 className="founder-name">Neilton</h5>
               <p>
               {t("Neiton")}
               </p>
